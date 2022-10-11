@@ -1,0 +1,217 @@
+Title: Kitchen Sink
+
+----
+
+Textfield: Praesent ac massa at
+
+----
+
+Slugfield: praesent-ac-massa-at
+
+----
+
+Slugfield2: praesent-ac-massa-at
+
+----
+
+Textareafield: In hac habitasse platea dictumst. **Vestibulum ** fringilla pede sit amet augue. Duis leo. Etiam imperdiet imperdiet orci.
+
+----
+
+Writerfield: <p>Phasellus nec sem in justo pellentesque facilisis. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae <strong>euismod</strong> ligula urna in dolor. Maecenas vestibulum mollis diam. Fusce convallis metus id felis luctus adipiscing.</p>
+
+----
+
+Listfield: <ul><li>Integer ante arcu accumsan</li><li>Aenean posuere tortor sed</li><li>Donec interdum metus et hendrerit</li></ul>
+
+----
+
+Related:
+
+- page://nFku43Ki3pyS9NyM
+- page://T18qI7ZUqldFRwhl
+- page://jTP2YTVPzlmTTw6y
+
+----
+
+Related2:
+
+- page://emTUJl2Q8HlLuVNO
+- page://nRb6jA7zJf4Gv8Ti
+- page://jTP2YTVPzlmTTw6y
+
+----
+
+Related3:
+
+- page://nRb6jA7zJf4Gv8Ti
+- page://T18qI7ZUqldFRwhl
+- page://jTP2YTVPzlmTTw6y
+
+----
+
+Images:
+
+- file://iJditVfuEtkxjpve
+- file://RROOkD4ADy2Ezh3W
+- file://HXVUCbwDbHLpvqPE
+
+----
+
+Images2:
+
+- file://aLFuHvw3cH45pbTf
+- file://z2v1fAR8p84syBmB
+- file://HXVUCbwDbHLpvqPE
+
+----
+
+Authors: 
+
+----
+
+Int: 7
+
+----
+
+Price: 12.89
+
+----
+
+Datefield: 2022-12-01
+
+----
+
+Timefield: 10:00:00
+
+----
+
+Datetimefield: 2022-10-16 04:26:00
+
+----
+
+Emailfield: wsydney@web.de
+
+----
+
+Telfield: 01733243309
+
+----
+
+Urlfield: https://example.com
+
+----
+
+Togglefield: true
+
+----
+
+Checkboxesfield: architecture, photography
+
+----
+
+Radiofield: design
+
+----
+
+Selectfield: architecture
+
+----
+
+Multiselectfield: design, architecture
+
+----
+
+Togglesfield2: right
+
+----
+
+Togglesfield: center
+
+----
+
+Rangefield: 130
+
+----
+
+Tags: Kitchen Sink, Test
+
+----
+
+Contact:
+
+photo:
+  - file://igYDzf2n5yI4bgj4
+name: Erna Klawuppke
+email: info@example.com
+phone: "017332433092"
+body: '[{"content":{"text":"<p>Vivamus in erat ut urna cursus vestibulum. Vestibulum ullamcorper mauris at ligula. Ut a nisl id ante tempus hendrerit. Aenean imperdiet. Cras id dui.<\/p>"},"id":"26375c19-295f-4b1f-9da0-bc04fe6391f2","isHidden":false,"type":"text"},{"content":{"text":"Donec vitae orci sed dolor rutrum auctor. Praesent egestas neque eu enim. Cras non dolor. Aenean massa.","citation":"Ut non enim"},"id":"e1c6c286-2334-4cca-a2c8-1d85dcafa293","isHidden":false,"type":"quote"}]'
+
+----
+
+Addresses:
+
+- 
+  street: Danziger Str. 15a
+  zip: "85386"
+  city: Eching
+  description: >
+    Nullam sagittis. Praesent egestas neque
+    eu enim. Suspendisse pulvinar, augue ac
+    venenatis condimentum, sem libero
+    volutpat nibh, nec pellentesque velit
+    pede quis nunc.
+  contact:
+    name: >
+      Ernestine-Amalie von
+      Hohenstein-Klawuppke
+    phone: "017657669931"
+    photo:
+      - file://igYDzf2n5yI4bgj4
+    email: info@example.com
+  body: '[{"content":{"text":"<p>Phasellus viverra nulla ut metus varius laoreet. Vestibulum dapibus nunc ac augue. Nunc nec neque. Cras varius. Pellentesque posuere.<\/p>"},"id":"85fefe6b-8df3-4e2f-9e1b-26a450695e68","isHidden":false,"type":"text"}]'
+- 
+  street: Rheinlandstraße 24
+  zip: "42579"
+  city: Heiligenhaus
+  description: >
+    Praesent nec nisl a purus blandit
+    viverra. Praesent nonummy mi in odio.
+    Aliquam eu nunc. Integer tincidunt.
+  contact: ""
+  body: ""
+- 
+  street: Obere Hauptstraße 25
+  zip: "86281"
+  city: Freising
+  description: Class aptent taciti sociosqu ad
+  contact: ""
+  body: '[{"content":{"location":"kirby","image":["file:\/\/CVm2AasDdniPgfb9"],"src":"","alt":"","caption":"","link":"","ratio":"16\/9","crop":"true"},"id":"9017425a-6af4-47a3-bf87-7f4632cb80e8","isHidden":false,"type":"image"}]'
+
+----
+
+Blocksfield: [{"content":{"text":"<p>Pellentesque auctor neque nec urna. Etiam sit amet orci eget eros faucibus tincidunt. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Praesent congue erat at massa. Curabitur at lacus ac velit ornare lobortis.<\/p><p>Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Sed in libero ut nibh placerat accumsan. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.<\/p>"},"id":"9fc48430-9be4-47fe-9974-320bd6a98478","isHidden":false,"type":"text"},{"content":{"level":"h2","text":"A Headline"},"id":"76aadb06-c489-44ef-a718-fea5b89faae0","isHidden":false,"type":"heading"},{"content":{"location":"kirby","image":["file:\/\/HXVUCbwDbHLpvqPE"],"src":"","alt":"","caption":"An Image","link":"","ratio":"21\/9","crop":"true"},"id":"35c51d96-3b27-423e-8873-b12ce38c9f2a","isHidden":false,"type":"image"},{"content":{"text":"Suspendisse pulvinar augue ac venenatis. Fusce fermentum odio nec arcu.","citation":"Vivamus quis mi"},"id":"12a4d7b5-a50e-4699-bfbe-5c4853a090b9","isHidden":false,"type":"quote"},{"content":{"text":"<ul><li>Sed cursus turpis vitae tortor<\/li><li>Phasellus nec sem in justo<\/li><li>Etiam feugiat lorem non metus<\/li><\/ul>"},"id":"ce57ac96-10ee-4742-979f-da2bf67f3a2d","isHidden":false,"type":"list"},{"content":{"level":"h2","text":"A Gallery"},"id":"58cc2efb-86c1-4a3e-b2e2-530c711ef2c4","isHidden":false,"type":"heading"},{"content":{"images":["file:\/\/wTxoKE5oSA25JoiI","file:\/\/aLFuHvw3cH45pbTf","file:\/\/z2v1fAR8p84syBmB","file:\/\/CVm2AasDdniPgfb9"],"caption":"","ratio":"4\/3","crop":"true"},"id":"6972d2bf-9a4e-4f0a-bd8f-230beba6b74e","isHidden":false,"type":"gallery"},{"content":[],"id":"c43e0ff8-7161-4b97-9672-54287b9dc09e","isHidden":false,"type":"line"},{"content":{"level":"h2","text":"Markdown Text"},"id":"6aadc955-39e5-4dee-b68a-24b8c9fb9da5","isHidden":false,"type":"heading"},{"content":{"text":"Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vivamus in erat ut urna cursus vestibulum. Maecenas vestibulum mollis diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.\n\nCurabitur at lacus ac velit ornare lobortis. Nunc interdum lacus sit amet orci. Fusce vel dui. Aenean ut eros et nisl sagittis vestibulum. Nunc nec neque.\n\n## Heading in Markdown\n\nSed fringilla mauris sit amet nibh. Curabitur nisi. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Suspendisse eu ligula. Nam at tortor in tellus interdum sagittis.\n\nAenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nullam accumsan lorem in dui. Praesent ut ligula non mi varius sagittis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed hendrerit."},"id":"c7e3ce60-8d36-4a28-8075-1cd43a3fd720","isHidden":false,"type":"markdown"},{"content":{"url":"https:\/\/www.youtube.com\/watch?v=2fhBvH_-tNM","caption":"A Video"},"id":"8d6ec130-6a48-47f0-a6db-757d30239958","isHidden":false,"type":"video"}]
+
+----
+
+Blocksfield2: [{"content":{"level":"h2","text":"A Heading"},"id":"26a7bcd1-d1e2-47d9-b4c0-8a423638bc13","isHidden":false,"type":"heading"},{"content":{"text":"<p>Quisque id odio. Donec vitae sapien ut libero venenatis faucibus. Cras dapibus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Praesent venenatis metus at tortor pulvinar varius.<\/p><p>Maecenas egestas arcu quis ligula mattis placerat. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Pellentesque ut neque. Etiam imperdiet imperdiet orci. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.<\/p>"},"id":"4bd7c65b-4756-4809-9616-06cb59856c02","isHidden":false,"type":"text"},{"content":{"level":"h2","text":"Custom Button Block"},"id":"a9cfeaad-7ab4-43f6-a1d8-77ffa1725fc7","isHidden":false,"type":"heading"},{"content":{"text":"<p>This block type is specified in the regular blueprint, but does not provide a preview except a simple label.<\/p>"},"id":"7ccaf9cb-1d59-4627-ab91-2bfc95b4af9c","isHidden":false,"type":"text"},{"content":{"link":"https:\/\/example.com","text":"Test Button","class":"","id":""},"id":"2deb735e-66a7-4081-9280-ed011243dc98","isHidden":false,"type":"button"},{"content":{"level":"h2","text":"Costum Audio Block with block preview"},"id":"7bd86da5-b338-4a24-94cd-d76f5b1a3372","isHidden":false,"type":"heading"},{"content":{"text":"<p>This requires a plugin that specifies the block blueprint and provides a Vue template for preview.<\/p>"},"id":"6655e551-c106-4340-9840-83c0ec542caa","isHidden":false,"type":"text"},{"content":{"poster":["file:\/\/MieX5mZ8tRoPBrBJ"],"source":["file:\/\/b4ObomRJZV9j5OxY"],"title":"La Mer","subtitle":"Chanson by Charles Trenet","description":"The most famous french chanson ever","controls":"true","autoplay":"false"},"id":"ddb131df-7df4-4513-86d5-99a0df02caf5","isHidden":false,"type":"audio"},{"content":{"text":"<p>Quisque id odio. Donec vitae sapien ut libero venenatis faucibus. Cras dapibus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Praesent venenatis metus at tortor pulvinar varius.<\/p> <p>Maecenas egestas arcu quis ligula mattis placerat. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Pellentesque ut neque. Etiam imperdiet imperdiet orci.<\/p>"},"id":"8d7741d0-c384-4542-9577-fb859c413948","isHidden":false,"type":"text"}]
+
+----
+
+Layoutfield: [{"attrs":{"class":"","id":"","image":[]},"columns":[{"blocks":[{"content":{"level":"h2","text":"Demo of a Layout Field"},"id":"d590a267-0cbe-4d0b-a69d-18b33dba5456","isHidden":false,"type":"heading"}],"id":"4f5d3d82-d632-458d-a103-6ae3524d404d","width":"1\/1"}],"id":"2d8de4fc-4ba4-40eb-b34c-e53ee4635338"},{"attrs":{"class":"","id":"","image":["file:\/\/MieX5mZ8tRoPBrBJ"]},"columns":[{"blocks":[{"content":{"text":"<p>Praesent egestas tristique nibh. Donec posuere vulputate arcu. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nam adipiscing. Duis leo.<\/p><p>Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Nullam cursus lacinia erat. Nullam dictum felis eu pede mollis pretium. Aenean commodo ligula eget dolor. Morbi mattis ullamcorper velit.<\/p><p>Etiam iaculis nunc ac metus. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Pellentesque dapibus hendrerit tortor. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam.<\/p>"},"id":"07fe6a24-4abc-44f3-9857-468bf849207d","isHidden":false,"type":"text"},{"content":{"level":"h3","text":"Heading"},"id":"4e6a68fe-8184-477f-8928-ad161cd72726","isHidden":false,"type":"heading"},{"content":{"text":"<p>Praesent ac massa at ligula laoreet iaculis. Praesent egestas neque eu enim. Duis lobortis massa imperdiet quam. Sed cursus turpis vitae tortor.<\/p>"},"id":"cd1a1df6-fc41-49a2-b649-f80bb03858bc","isHidden":false,"type":"text"}],"id":"51f3e1bb-3c63-4ac2-9ceb-2fc9c0920349","width":"1\/2"},{"blocks":[{"content":{"location":"kirby","image":["file:\/\/coDWHqHvSqFzCU2O"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"5f9a5558-07bf-4af6-aba0-7afe8d6b7717","isHidden":false,"type":"image"}],"id":"ac8fc545-3f78-452a-9e0c-f25410de6258","width":"1\/2"}],"id":"92a9b2fd-91c3-4489-b27e-37b35445bdce"},{"attrs":{"class":"","id":"","image":[]},"columns":[{"blocks":[{"content":{"level":"h2","text":"Another Heading"},"id":"41c66cfe-5e76-45cf-9f64-2f9912e6356f","isHidden":false,"type":"heading"}],"id":"b980dbcb-25d6-45b7-bc53-b497bd29e511","width":"1\/1"},{"blocks":[{"content":{"location":"kirby","image":["file:\/\/wTxoKE5oSA25JoiI"],"src":"","alt":"A cat","caption":"A cat","link":"","ratio":"","crop":"false"},"id":"69d7db24-6c7b-4ad1-9f5a-d7ddf2f3b03d","isHidden":false,"type":"image"}],"id":"c639ed5f-72f8-426c-b204-7958bd99a291","width":"1\/3"},{"blocks":[{"content":{"text":"<p>Suspendisse feugiat. Suspendisse non nisl sit amet velit hendrerit rutrum. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. In hac habitasse platea dictumst. Praesent nec nisl a purus blandit viverra.<\/p><p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam dictum felis eu pede mollis pretium. Praesent nonummy mi in odio. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.<\/p><p>Etiam feugiat lorem non metus. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Vestibulum eu odio..<\/p><p>Sed fringilla mauris sit amet nibh. Pellentesque ut neque. Aenean massa. Donec vitae orci sed dolor rutrum auctor. Phasellus viverra nulla ut metus varius laoreet.<\/p>"},"id":"7006d144-127a-403a-90f7-c17fc9c67052","isHidden":false,"type":"text"}],"id":"4922c0ed-f907-4df7-9365-d4ee2a590537","width":"2\/3"}],"id":"eeaeed13-38de-4151-9a0e-fc4effa6b82c"},{"attrs":{"class":"","id":"","image":[]},"columns":[{"blocks":[{"content":{"text":"<p>Praesent nonummy mi in odio. Nullam cursus lacinia erat. Phasellus nec sem in justo pellentesque facilisis. Phasellus gravida semper nisi. Praesent blandit laoreet nibh.<\/p><p>Duis vel nibh at velit scelerisque suscipit. Morbi mollis tellus ac sapien. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.<\/p>"},"id":"824d0910-bfbe-4fd1-87d0-261135be4bfb","isHidden":false,"type":"text"},{"content":{"pages":["page:\/\/jTP2YTVPzlmTTw6y","page:\/\/QJJVlR8YxRqritd9","page:\/\/nRb6jA7zJf4Gv8Ti","page:\/\/dmpWWdBNm2ozukPj"]},"id":"ac63e551-a9ea-4ca1-a946-632ffc2623a3","isHidden":false,"type":"pages"}],"id":"ad39d673-2bd7-40b6-b143-152a6e323d3f","width":"2\/3"},{"blocks":[{"content":{"location":"kirby","image":["file:\/\/aLFuHvw3cH45pbTf"],"src":"","alt":"","caption":"Field of poppies","link":"","ratio":"16\/9","crop":"true"},"id":"130cb0cd-88c1-41f8-b4eb-43661db27f6e","isHidden":false,"type":"image"}],"id":"aae2cfcd-f830-42d0-aa1e-6383a1cb344d","width":"1\/3"}],"id":"69ad4a31-c1be-4903-b735-874f32e0091e"},{"attrs":{"class":"","id":"","image":[]},"columns":[{"blocks":[{"content":{"text":"<p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Sed fringilla mauris sit amet nibh. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.<\/p><p>Maecenas malesuada. Praesent egestas neque eu enim. Duis vel nibh at velit scelerisque suscipit. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Pellentesque auctor neque nec urna.<\/p>"},"id":"14d83cef-573c-4736-908b-1ebbf2f82ebe","isHidden":false,"type":"text"}],"id":"2fe470a1-4ff7-46dd-9f05-6a43ba3c3d8e","width":"1\/2"},{"blocks":[{"content":{"text":"<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Aliquam lobortis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Praesent adipiscing.<\/p><p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Cras non dolor. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.<\/p>"},"id":"6885d089-f1c3-4d1b-a631-e8c498870441","isHidden":false,"type":"text"}],"id":"90a72087-4447-4806-895f-cee53897c37f","width":"1\/2"},{"blocks":[{"content":{"location":"kirby","image":["file:\/\/WutlfR7adgiKbTGR"],"src":"","alt":"","caption":"","link":"","ratio":"16\/9","crop":"true"},"id":"1843a1e5-add9-48a3-a549-9d493bd996ef","isHidden":false,"type":"image"}],"id":"2de10c08-ddae-4ad0-b359-e4439dfa3e98","width":"1\/3"},{"blocks":[{"content":{"level":"h2","text":"A Heading"},"id":"9b823af3-abf5-444d-91dd-79cae6be7df3","isHidden":false,"type":"heading"},{"content":{"text":"<p>Cras non dolor. Nam pretium turpis et arcu. Praesent vestibulum dapibus nibh. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.<\/p>"},"id":"e0d5bf24-7d2f-42d1-b345-f56382ba956b","isHidden":false,"type":"text"},{"content":{"text":"Cool!","citation":"Me"},"id":"921907b2-aaa4-4e87-9a2c-5af79ca685f4","isHidden":false,"type":"quote"}],"id":"73c1018a-3209-4901-a204-1961ba681e14","width":"1\/3"},{"blocks":[{"content":{"location":"kirby","image":["file:\/\/RROOkD4ADy2Ezh3W"],"src":"","alt":"","caption":"","link":"","ratio":"16\/9","crop":"true"},"id":"830013c0-818c-4b0b-96e8-6f1113134715","isHidden":false,"type":"image"}],"id":"24d0ef11-7803-4cf2-bd03-4aca038babb5","width":"1\/3"}],"id":"7bad8ba2-115d-494a-85f7-12546ebfc365"}]
+
+----
+
+Cover: - file://coDWHqHvSqFzCU2O
+
+----
+
+Date: 2022-10-08 01:10:00
+
+----
+
+Author: - user://br3YXJgC
+
+----
+
+Uuid: MIvRqrb2b9VaFAJy

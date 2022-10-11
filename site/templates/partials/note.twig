@@ -1,0 +1,21 @@
+<article class="note-excerpt">
+    <a href="{{ note.url }}">
+        <header>
+            <figure class="img">
+                {% if note.cover %}
+                    {{ note.cover.crop(640, 360)|raw }}
+                {% endif %}
+            </figure>
+
+            <h2 class="mt-2 font-semibold">{{ note.title }}</h2>
+            <time class="text-gray-600" datetime="{{ note.published|date('c') }}">{{ note.published|date() }}</time>
+        </header>
+
+        {% if excerpt ?? true %}
+            <div class="mt-6">
+                {{ note.text.toBlocks().excerpt(280) }}
+            </div>
+        {% endif %}
+
+    </a>
+</article>

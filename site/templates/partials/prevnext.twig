@@ -1,0 +1,29 @@
+{% set prev = page.prevListed %}
+{% set next = page.nextListed %}
+
+{% if prev or nex %}
+
+    <nav>
+        <h2 class="mt-16 mb-4 text-lg font-bold">Keep on reading</h2>
+
+        <div class="grid grid-cols-2 gap-12">
+            {% if prev %}
+                <div>
+                    {% include '@templates/partials/note.twig' with {
+                    	note: prev,
+                        excerpt: false
+                    } only %}
+                </div>
+            {% endif %}
+
+            {% if next %}
+                <div>
+                    {% include '@templates/partials/note.twig' with {
+                        note: next,
+                        excerpt: false
+                    } only %}
+                </div>
+            {% endif %}
+        </div>
+    </nav>
+{% endif %}

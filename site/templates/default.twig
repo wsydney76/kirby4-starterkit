@@ -1,0 +1,10 @@
+{% extends "@templates/layouts/main.twig" %}
+{% block content %}
+    <article>
+        <h1 class="h1">{{ page.title }}</h1>
+        <div class="text">
+            {{ page.text.kt|raw }}
+        </div>
+    </article>
+{% endblock %}
+

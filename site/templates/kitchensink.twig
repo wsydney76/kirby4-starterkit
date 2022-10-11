@@ -1,0 +1,17 @@
+{% extends "@templates/layouts/main.twig" %}
+
+{% block content %}
+    <article class="max-w-xl mx-auto">
+        {% include '@templates/partials/intro.twig' %}
+
+
+        <div class="prose prose-lg">
+            {{ page.blocksField.toBlocks()|raw }}
+        </div>
+
+        <div class="prose prose-lg mt-12">
+            {{ page.blocksField2.toBlocks()|raw }}
+        </div>
+        
+    </article>
+{% endblock %}

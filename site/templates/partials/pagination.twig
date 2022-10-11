@@ -1,0 +1,21 @@
+{% if pagination.hasPages %}
+    <nav class="mt-16 flex space-x-4 items-center font-semibold text-lg">
+
+            {% if pagination.hasPrevPage %}
+                <a href="{{ pagination.prevPageUrl }}">&larr;</a>
+            {% else %}
+                <span>&larr;</span>
+            {% endif %}
+
+            <div class="">
+                Page {{ pagination.page() }} of {{ pagination.pages }}
+            </div>
+
+            {% if pagination.hasNextPage %}
+                <a href="{{ pagination.nextPageUrl }}">&rarr;</a>
+            {% else %}
+                <span>&rarr;</span>
+            {% endif %}
+
+    </nav>
+{% endif %}

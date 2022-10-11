@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "kirbyup src/index.js --watch",
+    "build": "kirbyup src/index.js"
+  },
+  "devDependencies": {
+    "kirbyup": "^2.1.0-beta.1"
+  }
+}

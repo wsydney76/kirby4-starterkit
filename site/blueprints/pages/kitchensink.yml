@@ -1,0 +1,439 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Kitchen Sink
+
+# Sorting number scheme that is applied when page status is changed to `listed`
+# More about page sorting: https://getkirby.com/docs/reference/panel/blueprints/page#sorting
+num: date
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 📖
+
+# Custom descriptions for each page status depending on use case
+# More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
+status:
+  draft:
+    label: Draft
+    text: The test is still in draft mode. It can only be seen by editors with panel access.
+  unlisted:
+    label: In Review
+    text: The test is online and can be visited with the direct URL. The team must still give the final go to publish it.
+  listed:
+    label: Published
+    text: The test is online and listed in the blog
+
+# Define the form layout with two columns
+# Columns are optional but help structure the form layout
+# More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
+
+tabs:
+  - label: Basic Fields
+    columns:
+      - width: 1/2
+        fields:
+          textInputs:
+            label: Text Inputs
+            type: headline
+
+          textfield:
+            label: Text Field
+            type: text
+            help: A standard, single-line input field
+
+          slugField:
+            label: Slug Field
+            help: A text input that automatically sanitizes the typed value with our built-in sluggify method.
+            type: slug
+            width: 1/2
+            wizard:
+              field: textfield
+              text: Sync with Text Field!
+
+          slugField2:
+            label: Slug Field (Auto Sync)
+            type: slug
+            width: 1/2
+            sync: textfield
+
+          textareafield:
+            label: Text Area Field
+            type: textarea
+            help: A textarea field, which auto-resizes and has built-in format buttons.
+
+          writerfield:
+            label: Writer Field
+            type: writer
+            help: A simple WYSIWYG editor field for inline content with formats like bold, italic, etc.
+            marks:
+              - bold
+              - italic
+              - strike
+              -
+          listfield:
+            label: List Field
+            type: list
+            help: A simple WYSIWYG editor field for ordered and unordered lists
+
+          relations:
+            label: Relations
+            type: headline
+
+          related: fields/relatedPages
+
+          related2:
+            extends: fields/relatedPages
+            label: Related Pages (Cardlets)
+            layout: cardlets
+
+          related3:
+            extends: fields/relatedPages
+            label: Related Pages (Cards)
+            layout: cards
+            size: tiny
+
+          images: fields/images
+
+          images2:
+            extends: fields/images
+            layout: cards
+            size: tiny
+
+          authors:
+            label: Authors
+            type: users
+
+      - width: 1/2
+        fields:
+          numberinputs:
+            label: Numbers
+            type: headline
+
+          int:
+            label: Integer 0-10
+            type: number
+            before: "Amount:"
+            min: 0
+            max: 10
+            width: 1/3
+
+          gap:
+            type: gap
+            width: 1/3
+
+          price:
+            label: Price
+            type: number
+            step: .01
+            width: 1/3
+            after: €
+
+          dateinputs:
+            label: Date and Time
+            type: headline
+
+          datefield:
+            label: Date
+            type: date
+            width: 1/3
+            step: month
+
+          timefield:
+            label: Time
+            width: 1/3
+            type: time
+
+          datetimefield:
+            label: Date and time
+            type: date
+            width: 2/3
+            time:
+              step: 1 # 1 minute steps
+
+          contactinputs:
+            label: Contact Inputs
+            type: headline
+
+          emailfield:
+            label: Email Field
+            width: 1/3
+            type: email
+
+          telfield:
+            label: Telephone Field
+            width: 1/3
+            type: tel
+
+          urlfield:
+            label: URL Field
+            width: 1/3
+            type: url
+
+          selects:
+            label: Selects
+            type: headline
+
+          toggleField:
+            label: Toggle Field
+            type: toggle
+            width: 1/3
+            text:
+              - "Nope"
+              - "Yay!"
+              -
+          checkboxesField:
+            extends: fields/options
+            label: Checkboxes Field
+            type: checkboxes
+            width: 1/3
+
+          radioField:
+            extends: fields/options
+            label: Radio Field
+            type: radio
+            width: 1/3
+
+          selectField:
+            extends: fields/options
+            label: Select Field
+            type: select
+            width: 1/3
+
+          multiselectField:
+            extends: fields/options
+            label: Multi Select Field
+            type: multiselect
+            width: 2/3
+
+          togglesField2:
+            type: toggles
+            label: Toggles Field
+            labels: false
+            width: 1/3
+            options:
+              - value: left
+                icon: text-left
+              - value: center
+                icon: text-center
+              - value: right
+                icon: text-right
+              - value: justify
+                icon: text-justify
+
+          togglesField:
+            type: toggles
+            label: Toggles Field
+            width: 2/3
+            options:
+              - value: left
+                text: Left
+                icon: text-left
+              - value: center
+                text: Center
+                icon: text-center
+              - value: right
+                text: Right
+                icon: text-right
+              - value: justify
+                text: Justify
+                icon: text-justify
+
+          rangeField:
+            label: Range Field
+            type: range
+            min: 0
+            max: 250
+            before: Price
+            after: €
+
+          tags:
+            label: Tags
+            type: tags
+
+          visuals:
+            label: Visuals
+            type: headline
+
+          info:
+            label: Info
+            type: info
+            text: |
+              Dear editor,
+
+              each project should have a **cover.jpg**, which will be displayed in the project overview. You should also make sure to fill in all fields correctly.
+
+              In love,
+              Your admin
+
+          line:
+            type: line
+
+          warning:
+            label: Warning
+            type: info
+            theme: negative
+            text: |
+              Dear editor,
+
+              each project should have a **cover.jpg**, which will be displayed in the project overview. You should also make sure to fill in all fields correctly.
+
+              In love,
+              Your admin
+
+          positive:
+            label: Positive
+            type: info
+            theme: positive
+            text: |
+              Dear editor,
+
+              each project should have a **cover.jpg**, which will be displayed in the project overview. You should also make sure to fill in all fields correctly.
+
+              In love,
+              Your admin
+
+          neutral:
+            label: Neutral
+            type: info
+            theme: none
+            text: |
+              Dear editor,
+
+              each project should have a **cover.jpg**, which will be displayed in the project overview. You should also make sure to fill in all fields correctly.
+
+              In love,
+              Your admin
+
+  - label: Complex Fields
+    columns:
+      - width: 1/3
+        fields:
+          contact:
+            type: object
+            label: Object Field
+            help: Structured object input, which stores properties as YAML.
+            fields:
+              photo:
+                type: files
+              name:
+                type: text
+              email:
+                type: email
+              phone:
+                type: tel
+              body:
+                type: blocks
+
+      - width: 2/3
+        fields:
+          addresses:
+            label: Structure Field
+            type: structure
+            help: Structured data input, which stores data in a field as YAML.
+            fields:
+              street:
+                label: Street
+                type: text
+                width: 1/3
+              zip:
+                label: ZIP
+                type: text
+                width: 1/3
+              city:
+                label: City
+                type: text
+                width: 1/3
+              description:
+                label: Description
+                type: textarea
+                width: 1/2
+              contact:
+                type: object
+                label: Contact
+                width: 1/2
+                fields:
+                  name:
+                    type: text
+                  phone:
+                    type: tel
+            columns:
+              street:
+                width: 2/5
+              zip:
+                width: 1/5
+              city:
+                width: 2/5
+
+      - width: 1/1
+        fields:
+          blocksField:
+            type: blocks
+            label: Default Blocks Field
+            width: 1/2
+
+          blocksField2:
+            type: blocks
+            label: Customized Blocks Field
+            width: 1/2
+            fieldsets:
+              text:
+                label: Text
+                type: group
+                fieldsets:
+                  heading:
+                    extends: blocks/heading
+                    fields:
+                      level:
+                        options:
+                          - h2
+                          - h3
+                  - text
+                  - list
+              media:
+                label: Media
+                type: group
+                fieldsets:
+                  - image
+                  - gallery
+              custom:
+                label: Custom
+                type: group
+                fieldsets:
+                  - button
+                  - audio
+
+  - label: Layout
+    fields:
+      layoutField:
+        type: layout
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/4, 1/4, 1/4, 1/4"
+          - "1/3, 2/3"
+          - "2/3, 1/3"
+          - "1/3, 1/3, 1/3"
+          - "1/1, 1/3, 2/3"
+          - "1/1, 2/3, 1/3"
+          - "1/2, 1/2, 1/3, 1/3, 1/3"
+        fieldsets:
+          - heading
+          - text
+          - image
+          - quote
+          pages:
+            label: "{{ pages.length }} pages"
+            fields:
+              pages:
+                extends: fields/pages
+
+        settings:
+          fields:
+            class:
+              type: text
+              width: 1/2
+            id:
+              type: text
+              width: 1/2
+            image:
+              label: Background image
+              type: files
+

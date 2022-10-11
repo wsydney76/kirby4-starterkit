@@ -1,0 +1,31 @@
+{% extends "@templates/layouts/main.twig" %}
+
+
+{% block content %}
+
+    {% include '@templates/partials/intro.twig' %}
+
+    {% set photographyPage = page('photography') %}
+
+    {% if photographyPage %}
+        <ul class="home-grid">
+            {% for album in photographyPage.children().listed() %}
+                <li>
+                    <a href="{{ album.url }}">
+                        <figure>
+                            {% set cover = album.cover %}
+                            {% if cover %}
+                                {{ cover.resize(1014,1024)|raw }}
+                            {% endif %}
+                            <figcaption>
+                                <span>
+                                  <span class="example-name">{{ album.title }}</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

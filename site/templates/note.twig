@@ -1,0 +1,44 @@
+{% extends "@templates/layouts/main.twig" %}
+
+{% block content %}
+
+    {% set cover = page.cover %}
+
+    {% if cover %}
+        <a href="{{ cover.url }}" data-lightbox class="img">
+            {{ cover.crop(1200, 600)|raw }}
+        </a>
+    {% endif %}
+
+    <article class="max-w-xl mx-auto">
+
+        {% include '@templates/partials/intro.twig' %}
+
+        <div class="prose prose-lg">
+            {{ page.text.toBlocks|raw }}
+        </div>
+
+        <footer class="mt-12">
+            {% if tags %}
+                <ul class="flex space-x-4 mb-12">
+                    {% for tag in tags %}
+                        <li>
+                            <a class="bg-gray-300 hover:bg-black hover:text-white px-4 py-2 transition-colors"
+                               href="{{ page.parent().url({params : {tag: tag}}) }}">{{ tag }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <time class="note-date" datetime="{{ page.date|date('c') }}">Published on {{ page.date|date }}
+            </time>
+        </footer>
+
+       {% include '@templates/partials/prevnext.twig' %}
+
+
+    </article>
+
+
+
+{% endblock %}

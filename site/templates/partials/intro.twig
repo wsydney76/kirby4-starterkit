@@ -1,0 +1,7 @@
+<header class="my-12 text-4xl">
+    <h1>{{ page.headline.isEmpty ? page.title : page.headline }}
+    </h1>
+    {% if page.subheadline %}
+        <p class="text-gray-500">{{ page.subheadline }}</p>
+    {% endif %}
+</header>

@@ -1,0 +1,16 @@
+{% for layout in field.toLayouts %}
+    {% set class = layout.attrs.class ?? '' %}
+
+    <section class="lg:grid lg:grid-cols-12 lg:gap-12 prose prose-lg max-w-none {{ class }}">
+
+        {% for column in layout.columns %}
+
+        	<div class="col-span-{{ column.span }}">
+                {{ column.blocks|raw }}
+            </div>
+
+        {% endfor %}
+
+    </section>
+{% endfor %}
+

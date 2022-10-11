@@ -1,0 +1,28 @@
+{% extends "@templates/layouts/main.twig" %}
+
+{% block content %}
+
+    {% if tag %}
+        <header class="my-12 text-4xl">
+            <h1>
+                <small>Tag:</small> {{ html(tag) }}
+                <a href="{{ page.url }}">&times;</a>
+            </h1>
+        </header>
+    {% else %}
+        {% include '@templates/partials/intro.twig' with {page} only %}
+    {% endif %}
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for note in notes %}
+            <li>
+                {% include '@templates/partials/note.twig' with {
+                    note
+                } only %}
+            </li>
+        {% endfor %}
+    </ul>
+    
+    {% include '@templates/partials/pagination.twig' %}
+
+{% endblock %}

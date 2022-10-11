@@ -1,0 +1,37 @@
+{
+  "name": "wsydney76/kirby-ddev-starter",
+  "description": "Kirby Starterkit",
+  "type": "project",
+  "keywords": [
+    "kirby",
+    "cms",
+    "starterkit"
+  ],
+  "require": {
+    "getkirby/cms": "^3.8",
+    "amteich/kirby-twig": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "site\\": "site/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    },
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.0.2"
+    }
+  },
+  "scripts": {
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 kirby/router.php"
+    ]
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

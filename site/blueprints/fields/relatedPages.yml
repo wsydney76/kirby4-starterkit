@@ -1,0 +1,7 @@
+label: Related Pages
+type: pages
+layout: list
+image:
+  query: page.cover
+  cover: true
+info: "{{ page.published }}"

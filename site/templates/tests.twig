@@ -1,0 +1,19 @@
+{% extends "@templates/layouts/main.twig" %}
+
+{% block content %}
+    <article class="max-w-xl mx-auto">
+
+        {% include '@templates/partials/intro.twig' %}
+
+        {% set tests = page('tests')
+            .children()
+            .listed()
+            .sortBy('date', 'desc')
+        %}
+
+        {% for test in tests %}
+        	<a href="{{ test.permalink }}">{{ test.title }}</a>
+        {% endfor %}
+
+    </article>
+{% endblock %}

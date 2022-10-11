@@ -1,0 +1,27 @@
+{% extends "@templates/layouts/main.twig" %}
+
+{% block content %}
+    {% include '@templates/partials/intro.twig' %}
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        {% for project in page.children().listed() %}
+
+            <li>
+                <a href="{{ project.url }}">
+                    <figure>
+                        {% set cover = project.cover %}
+                        {% if cover %}
+                            <span>
+                                {{ cover.crop(400, 500)|raw }}
+                            </span>
+                        {% endif %}
+                        <figcaption class="mt-4">
+                            {{ project.title }}
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
