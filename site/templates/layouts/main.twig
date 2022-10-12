@@ -29,7 +29,7 @@
         <div class="flex flex-wrap space-x-8">
 
             {% for item in pages.listed %}
-                <a {{ item.isOpen ? 'aria-current ' }} href="{{ item.url }}">{{ item.title }}</a>
+                <a class="{{ item.isOpen ? 'underline  underline-offset-8' }}" href="{{ item.url }}">{{ item.title }}</a>
             {% endfor %}
 
             {% include '@templates/partials/social.twig' %}

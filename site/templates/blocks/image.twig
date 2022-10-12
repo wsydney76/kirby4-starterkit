@@ -7,11 +7,11 @@
     {% set caption = block.caption %}
     {% set ratio = block.ratio ?? '' %}
 
-    {% set width = width ?? 2000 %} {# TODO: Adjust to context #}
+    {% set width = width ?? 2000 %}
 
     <figure>
         {{ img(image, {
-            transform: {width: width, ratio: ratio},
+            transform: {width, ratio},
             attr: {
                 class: 'object-cover h-full w-full',
                 loading: 'lazy'

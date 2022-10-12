@@ -10,7 +10,7 @@
         {% for image in block.images.toFiles %}
             <div>
                 {{ img(image, {
-                    transform: {width: 300, ratio: ratio}
+                    transform: {width: 300, ratio}
                 }) }}
             </div>
         {% endfor %}
