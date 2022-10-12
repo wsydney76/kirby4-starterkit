@@ -28,8 +28,7 @@ columns:
   - width: 2/3
     # This columns only has a single field
     fields:
-      text:
-        type: blocks
+      text: fields/bodycontent
 
   - width: 1/3
     # This second column holds a fields section with multiple fields

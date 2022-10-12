@@ -1,0 +1,29 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+{% set caption = block.caption %}
+{% set ratio = block.ratio ?? 'auto' %}
+
+{% set width = 2000 %} {# TODO: Adjust to context #}
+
+{% set image = block.image.toFile %}
+
+{{ ratio }}
+
+{% if image %}
+    <figure>
+        {{ img(image, {
+            transform: {width: width, ratio: ratio},
+            attr: {
+                class: 'object-cover h-full w-full',
+                loading: 'lazy'
+            },
+            mode: block.crop.isTrue ? 'crop' : 'resize'
+        } ) }}
+        {% if caption.isNotEmpty %}
+            <figcaption>
+                {{ caption }}
+            </figcaption>
+        {% endif %}
+    </figure>
+{% endif %}
+

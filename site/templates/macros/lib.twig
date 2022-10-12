@@ -1,10 +1,17 @@
 {% macro img(image, params = []) %}
 
     {% set width = params.transform.width ?? null %}
-    {% set height = params.transform.height ?? null %}
+
+    {% if params.transform.ratio is defined and params.transform.ratio.isNotEmpty %}
+        {% set ratio = params.transform.ratio|split('/') %}
+        {% set height = (width / ratio[0] * ratio[1])|round %}
+    {% else %}
+        {% set height = params.transform.height ?? null %}
+    {% endif %}
 
     {% set mode = params.mode ?? 'crop' %}
-    {% set attr = params.attr ?? {loading: 'lazy'} %}
+    {% set loading = params.attr.loading ?? 'lazy' %}
+    {% set class = params.attr.class ?? '' %}
 
     {% if mode == 'resize' %}
         {% set image = image.resize(width, height) %}
@@ -14,9 +21,10 @@
 
 
     <img alt="{{ image.alt }}"
+         class="{{ class }}"
          src="{{ image.url }}"
          width="{{ image.width }}"
          height="{{ image.height }}"
-            {{ attr.loading ? 'loading="lazy"' }}
+            {{ loading ? 'loading="lazy"' }}
     >
 {% endmacro %}

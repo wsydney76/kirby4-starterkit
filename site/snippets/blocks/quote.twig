@@ -1,0 +1,8 @@
+<blockquote>
+    {{ block.text|raw }}
+    {% if block.citation.isNotEmpty %}
+        <cite class="block not-italic mt-2 font-normal">
+            {{ block.citation|raw }}
+        </cite>
+    {% endif %}
+</blockquote>

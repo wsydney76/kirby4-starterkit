@@ -1,0 +1,11 @@
+type: blocks
+fieldsets:
+  - text
+  - heading
+  - list
+  - quote
+  - image
+  - gallery
+  - video
+  - line
+
