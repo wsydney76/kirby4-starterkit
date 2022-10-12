@@ -1,9 +1,13 @@
+{% from '@templates/macros/lib.twig' import img %}
+
 <article class="note-excerpt">
     <a href="{{ note.url }}">
         <header>
-            <figure class="img">
+            <figure>
                 {% if note.cover %}
-                    {{ note.cover.crop(640, 360)|raw }}
+                    {{ img(note.cover, {
+                        transform: {width: 640, height: 360}
+                    }) }}
                 {% endif %}
             </figure>
 

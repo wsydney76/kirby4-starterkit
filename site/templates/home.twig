@@ -1,5 +1,6 @@
 {% extends "@templates/layouts/main.twig" %}
 
+{% from '@templates/macros/lib.twig' import img %}
 
 {% block content %}
 
@@ -15,7 +16,10 @@
                         <figure>
                             {% set cover = album.cover %}
                             {% if cover %}
-                                {{ cover.resize(1014,1024)|raw }}
+                                {{ img(cover, {
+                                    transform: {width: 1024, height: 1024},
+                                    mode: 'resize'
+                                }) }}
                             {% endif %}
                             <figcaption>
                                 <span>

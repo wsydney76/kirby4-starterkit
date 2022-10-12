@@ -1,0 +1,22 @@
+{% macro img(image, params = []) %}
+
+    {% set width = params.transform.width ?? null %}
+    {% set height = params.transform.height ?? null %}
+
+    {% set mode = params.mode ?? 'crop' %}
+    {% set attr = params.attr ?? {loading: 'lazy'} %}
+
+    {% if mode == 'resize' %}
+        {% set image = image.resize(width, height) %}
+    {% else %}
+        {% set image = image.crop(width, height) %}
+    {% endif %}
+
+
+    <img alt="{{ image.alt }}"
+         src="{{ image.url }}"
+         width="{{ image.width }}"
+         height="{{ image.height }}"
+            {{ attr.loading ? 'loading: "lazy"' }}
+    >
+{% endmacro %}

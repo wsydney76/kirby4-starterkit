@@ -1,4 +1,5 @@
 {% extends "@templates/layouts/main.twig" %}
+{% from '@templates/macros/lib.twig' import img %}
 
 {% block content %}
     {% include '@templates/partials/intro.twig' %}
@@ -11,9 +12,9 @@
                     <figure>
                         {% set cover = project.cover %}
                         {% if cover %}
-                            <span>
-                                {{ cover.crop(400, 500)|raw }}
-                            </span>
+                            {{ img(cover, {
+                                transform: {width: 400, height: 500}
+                            }) }}
                         {% endif %}
                         <figcaption class="mt-4">
                             {{ project.title }}

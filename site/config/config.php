@@ -11,6 +11,9 @@
 return [
 	'debug' => true,
 	'panel.install' => true,
+    'thumbs' => [
+        'format' => 'webp'
+    ],
     'amteich.twig.env.extensions' => [
         'site' => 'site\\twigextensions\\SiteExtension'
     ]

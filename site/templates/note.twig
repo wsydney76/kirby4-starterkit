@@ -1,12 +1,16 @@
 {% extends "@templates/layouts/main.twig" %}
 
+{% from '@templates/macros/lib.twig' import img %}
+
 {% block content %}
 
     {% set cover = page.cover %}
 
     {% if cover %}
-        <a href="{{ cover.url }}" data-lightbox class="img">
-            {{ cover.crop(1200, 600)|raw }}
+        <a href="{{ cover.url }}" data-lightbox>
+            {{ img(cover, {
+                transform: {width: 1200, height: 600}
+            }) }}
         </a>
     {% endif %}
 
@@ -34,7 +38,7 @@
             </time>
         </footer>
 
-       {% include '@templates/partials/prevnext.twig' %}
+        {% include '@templates/partials/prevnext.twig' %}
 
 
     </article>
