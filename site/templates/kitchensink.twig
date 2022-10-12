@@ -6,11 +6,15 @@
 
 
         <div class="prose prose-lg">
-            {{ page.blocksField.toBlocks()|raw }}
+            {% include '@templates/partials/blocks.twig' with {
+                blocks: page.blocksField.toBlocks
+            } only %}
         </div>
 
         <div class="prose prose-lg mt-12">
-            {{ page.blocksField2.toBlocks()|raw }}
+            {% include '@templates/partials/blocks.twig' with {
+                blocks: page.blocksField2.toBlocks
+            } only %}
         </div>
         
     </article>

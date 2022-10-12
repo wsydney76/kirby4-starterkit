@@ -1,0 +1,23 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+{% set caption = block.caption %}
+{% set crop = block.crop.isTrue %}
+{% set ratio = block.ratio ?? '' %}
+
+
+<figure {{ attr({'data-ratio': ratio, 'data-crop': crop}) }}>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 not-prose">
+        {% for image in block.images.toFiles %}
+            <div>
+                {{ img(image, {
+                    transform: {width: 300, ratio: ratio}
+                }) }}
+            </div>
+        {% endfor %}
+    </div>
+    {% if caption %}
+        <figcaption>
+            {{ caption }}
+        </figcaption>
+    {% endif %}
+</figure>

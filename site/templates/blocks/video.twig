@@ -1,0 +1,11 @@
+{% if block.url.isNotEmpty %}
+
+    <figure>
+        <div>
+            {{ video(block.url, [], {width: 768, height: 432, class: 'w-full aspect-video'}) }}
+        </div>
+        {% if block.caption.isNotEmpty %}
+            <figcaption>{{ block.caption }}</figcaption>
+        {% endif %}
+    </figure>
+{% endif %}

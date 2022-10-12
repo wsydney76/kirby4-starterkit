@@ -7,7 +7,20 @@
             {% for column in layout.columns %}
 
                 <div class="col-span-{{ column.span }}">
-                    {{ column.blocks|raw }}
+
+                    {% for block in column.blocks %}
+                        {% if block.type == 'image' %}
+                            {% include "@templates/blocks/image.twig" with {
+                                block,
+                                width: 120 * column.span
+                            } only %}
+                        {% else %}
+                            {% include "@templates/blocks/#{block.type}.twig" with {
+                                block
+                            } only %}
+                        {% endif %}
+                    {% endfor %}
+
                 </div>
 
             {% endfor %}

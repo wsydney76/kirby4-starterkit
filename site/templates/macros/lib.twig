@@ -20,11 +20,13 @@
     {% endif %}
 
 
-    <img alt="{{ image.alt }}"
-         class="{{ class }}"
-         src="{{ image.url }}"
-         width="{{ image.width }}"
-         height="{{ image.height }}"
-            {{ loading ? 'loading="lazy"' }}
-    >
+    <img {{ attr({
+        alt: image.alt,
+        class: class,
+        src: image.url,
+        width: image.width,
+        height: image.height,
+        loading: loading ? loading : null
+    }) }}>
+
 {% endmacro %}

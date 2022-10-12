@@ -19,7 +19,9 @@
         {% include '@templates/partials/intro.twig' %}
 
         <div class="prose prose-lg">
-            {{ page.text.toBlocks|raw }}
+            {% include '@templates/partials/blocks.twig' with {
+            	blocks: page.text.toBlocks
+            } only %}
         </div>
 
         <footer class="mt-12">

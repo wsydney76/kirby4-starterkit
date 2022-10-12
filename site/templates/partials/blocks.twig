@@ -1,0 +1,14 @@
+{% for block in blocks %}
+
+    {% if block.type == 'image' %}
+        {% include "@templates/blocks/image.twig" with {
+            block,
+            width: 640
+        } only %}
+    {% else %}
+        {% include "@templates/blocks/#{block.type}.twig" with {
+            block
+        } only %}
+    {% endif %}
+
+{% endfor %}
