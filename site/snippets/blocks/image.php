@@ -26,6 +26,7 @@ $ratio    = $block->ratio()->or('auto');
 $class    = 'w-full aspect-' . $ratio;
 $src      = null;
 $lightbox = $link->isEmpty();
+$srcValue = null;
 
 if ($block->location() === 'web') {
     $src      = $block->src();

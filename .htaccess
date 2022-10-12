@@ -33,7 +33,10 @@ RewriteRule ^content/(.*) index.php [L]
 RewriteRule ^site/(.*) index.php [L]
 
 # block direct access to Kirby and the Panel sources
-RewriteRule ^kirby/(.*) index.php [L]
+RewriteRule ^vendor/(.*) index.php [L]
+RewriteRule ^src/(.*) index.php [L]
+RewriteRule ^setup/(.*) index.php [L]
+RewriteRule ^node_modules/(.*) index.php [L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
