@@ -1,18 +1,11 @@
 {% extends "@templates/layouts/main.twig" %}
 
-{% from '@templates/macros/lib.twig' import img %}
 
 {% block content %}
 
-    {% set cover = page.cover %}
-
-    {% if cover %}
-        <a href="{{ cover.url }}" data-lightbox>
-            {{ img(cover, {
-                transform: {width: 1200, height: 600}
-            }) }}
-        </a>
-    {% endif %}
+    {% include '@templates/partials/cover.twig' with {
+    	image: page.cover
+    } only %}
 
     <article class="max-w-xl mx-auto">
 

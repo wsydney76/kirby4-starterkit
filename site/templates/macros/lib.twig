@@ -1,31 +1,56 @@
 {% macro img(image, params = []) %}
 
     {% set width = params.transform.width ?? null %}
-
-    {% if params.transform.ratio is defined and params.transform.ratio.isNotEmpty %}
-        {% set ratio = params.transform.ratio|split('/') %}
-        {% set height = (width / ratio[0] * ratio[1])|round %}
-    {% else %}
-        {% set height = params.transform.height ?? null %}
-    {% endif %}
+    {% set widths = width %}
 
     {% set mode = params.mode ?? 'crop' %}
     {% set loading = params.attr.loading ?? 'lazy' %}
     {% set class = params.attr.class ?? '' %}
-
-    {% if mode == 'resize' %}
-        {% set image = image.resize(width, height) %}
-    {% else %}
-        {% set image = image.crop(width, height) %}
+    {% set sizes = params.attr.sizes ?? '' %}
+    
+    {% if widths is not iterable %}
+        {% set widths = [widths] %}
     {% endif %}
+
+    {% set images = [] %}
+    {% set maxWidth = 0 %}
+    {% set maxHeight = 0 %}
+    {% set srcset = '' %}
+    
+    {% for width in widths %}
+        {% if params.transform.ratio is defined and params.transform.ratio %}
+            {% set ratio = params.transform.ratio|split('/') %}
+            {% set height = (width / ratio[0] * ratio[1])|round %}
+        {% else %}
+            {% set height = params.transform.height ?? null %}
+        {% endif %}
+
+        {% if mode == 'resize' %}
+            {% set transformedImage = image.resize(width, height) %}
+        {% else %}
+            {% set transformedImage = image.crop(width, height) %}
+        {% endif %}
+        
+        {% set images = images|merge([transformedImage]) %}
+        {% set maxHeight = max(maxHeight, height) %}
+        {% set maxWidth = max(maxWidth, width) %}
+        {% if widths|length > 1 %}
+
+            {% set srcset = srcset ~ "#{transformedImage.url} #{width}w#{not loop.last ? ', '}"  %}
+        {% endif %}
+    {% endfor %}
+
+
 
 
     <img {{ attr({
-        alt: image.alt,
+        alt: images[0].alt|e('html_attr'),
         class: class,
-        src: image.url,
-        width: image.width,
-        height: image.height,
+        src: images[0].url,
+        width: maxWidth,
+        height: maxHeight,
+        srcset: srcset,
+        sizes: sizes,
         loading: loading ? loading : null
     }) }}>
 

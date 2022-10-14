@@ -13,8 +13,10 @@ size: tiny
 sortBy: date desc
 create:
   - kitchensink
+  - about
 templates:
   - kitchensink
+  - about
 image:
   query: page.cover
   cover: true

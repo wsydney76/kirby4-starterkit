@@ -28,7 +28,7 @@ class SiteExtension extends AbstractExtension
                 return new Markup(Html::a($url, $text), 'UTF-8');
             }),
             new TwigFunction('attr', function($attr) {
-                return new Markup(Html::attr($attr), 'UTF-8');
+                return Html::attr($attr);
             })
         ];
     }

@@ -5,16 +5,18 @@
 {% if image %}
 
     {% set caption = block.caption %}
-    {% set ratio = block.ratio ?? '' %}
+    {% set ratio = block.ratio.toString ?? '' %}
 
     {% set width = width ?? 2000 %}
+    {% set sizes = sizes ?? '' %}
 
     <figure>
         {{ img(image, {
             transform: {width, ratio},
             attr: {
                 class: 'object-cover h-full w-full',
-                loading: 'lazy'
+                loading: 'lazy',
+                sizes: sizes
             },
             mode: block.crop.isTrue ? 'crop' : 'resize'
         } ) }}

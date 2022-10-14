@@ -25,6 +25,7 @@ namespace site\_faux;
 use Kirby\Cms\App;
 use Kirby\Cms\Block;
 use Kirby\Cms\Blocks;
+use Kirby\Cms\File;
 use Kirby\Cms\Layout;
 use Kirby\Cms\Layouts;
 use Kirby\Cms\Page;
@@ -52,7 +53,8 @@ class FauxTwigExtension extends AbstractExtension implements GlobalsInterface
             'block' => new Block(),
             'layouts' => new Layouts(),
             'layout' => new Layout(),
-            'pagination' => new Pagination()
+            'pagination' => new Pagination(),
+            'image' => new File(),
 
         ];
     }

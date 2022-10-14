@@ -1,0 +1,8 @@
+{% from '@templates/macros/lib.twig' import img %}
+{% if image %}
+    <a href="{{ image.url }}" data-lightbox>
+        {{ img(image, {
+            transform: {width: [400, 640, 1024, 1280], ratio: '3/1'}
+        }) }}
+    </a>
+{% endif %}

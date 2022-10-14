@@ -1,18 +1,39 @@
+{# Max width 1280px, breakpoint at 1024px, below that: full width, above column size #}
+{% set maxWidth = 1280 %}
+{% set breakpoint = 1024 %}
+{% set baseWidths = [400, 640, 1024] %}
+{% set baseSizes = baseWidths|map(s => "(max-width: #{s}px) #{s}px")|join(', ') %}
+{% set fullWidthSizes = {
+    12: 1280,
+    3: 400,
+    4: 640,
+    6: 640,
+    8: 1024,
+    9: 1024,
+} %}
+
 <div class="space-y-12">
     {% for layout in field.toLayouts %}
         {% set class = layout.attrs.class ?? '' %}
 
-        <section class="lg:grid lg:grid-cols-12 lg:gap-12 prose prose-lg max-w-none {{ class }}">
+        <section class="lg:grid lg:grid-cols-12 lg:gap-12 max-w-none {{ class }}">
 
             {% for column in layout.columns %}
 
-                <div class="col-span-{{ column.span }}">
+                <div class="col-span-{{ column.span }} prose prose-lg max-w-none">
 
                     {% for block in column.blocks %}
                         {% if block.type == 'image' %}
+                            {% set widths = baseWidths %}
+                            {% set width = maxWidth / 12 * column.span %}
+                            {% if width > breakpoint %}
+                                {% set widths = baseWidths|merge([maxWidth]) %}
+                            {% endif %}
+
                             {% include "@templates/blocks/image.twig" with {
                                 block,
-                                width: 120 * column.span
+                                width: widths,
+                                sizes: "#{baseSizes}, #{fullWidthSizes[column.span]}px"
                             } only %}
                         {% else %}
                             {% include "@templates/blocks/#{block.type}.twig" with {
