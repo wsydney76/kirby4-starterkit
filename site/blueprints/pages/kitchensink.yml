@@ -398,6 +398,7 @@ tabs:
                 type: group
                 fieldsets:
                   - button
+                  - buttoninline
                   - audio
 
   - label: Layout
@@ -437,3 +438,79 @@ tabs:
               label: Background image
               type: files
 
+  - label: Plugins
+    columns:
+      - width: 2/3
+        fields:
+          entityBlocks:
+            label: Fields Block Plugin
+            type: blocks
+            fieldsets:
+              contentHeader:
+                name: Content Header
+                icon: bolt
+                preview: fields # required
+                wysiwyg: true # recommended
+                fields:
+                  title:
+                    type: text
+                  logo:
+                    type: files
+              contentText:
+                name: Content Text
+                icon: text
+                preview: fields # required
+                wysiwyg: true # recommended
+                fields:
+                  text:
+                    type: writer
+              contentNested:
+                name: Nested Content
+                icon: circle-nested
+                preview: fields # required
+                wysiwyg: true # recommended
+                fields:
+                  contentBlocks:
+                    type: blocks
+                    fieldsets:
+                      text:
+                        name: Text
+                        icon: text
+                        preview: fields # required
+                        wysiwyg: true # recommended
+                        fields:
+                          text:
+                            type: writer
+                      textImage:
+                        name: Text with image left
+                        icon: text
+                        preview: fields # required
+                        wysiwyg: true # recommended
+                        fields:
+                          leftCol:
+                            type: group
+                            width: 1/3
+                            fields:
+                              image:
+                                extends: fields/images
+                                layout: cards
+                                size: tiny
+                                width: 1/3
+                                multiple: false
+                              caption:
+                                type: text
+
+                          text:
+                            type: writer
+      - width: 1/3
+        fields:
+          header:
+            label: Entity Field Plugin
+            type: entity
+            icon: title # optional
+            toggle: true # optional
+            fields:
+              title:
+                type: text
+              logo:
+                type: files

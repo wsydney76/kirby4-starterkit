@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a2a9f44108b4037a75f005824ae55dc",
+    "content-hash": "26c7b628c8b762555d7ea2b845d03301",
     "packages": [
         {
             "name": "amteich/kirby-twig",
@@ -400,6 +400,41 @@
             "time": "2020-12-28T12:54:39+00:00"
         },
         {
+            "name": "jg/kirby-fields-block",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jongacnik/kirby-fields-block.git",
+                "reference": "7a001ae002a5f30cf669a6ac9b10191a20486470"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jongacnik/kirby-fields-block/zipball/7a001ae002a5f30cf669a6ac9b10191a20486470",
+                "reference": "7a001ae002a5f30cf669a6ac9b10191a20486470",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Gacnik",
+                    "email": "jon@folderstudio.com"
+                }
+            ],
+            "description": "Kirby Fields Block",
+            "support": {
+                "issues": "https://github.com/jongacnik/kirby-fields-block/issues",
+                "source": "https://github.com/jongacnik/kirby-fields-block/tree/v1.1.1"
+            },
+            "time": "2022-04-14T21:01:49+00:00"
+        },
+        {
             "name": "laminas/laminas-escaper",
             "version": "2.10.0",
             "source": {
@@ -572,6 +607,55 @@
                 "source": "https://github.com/michelf/php-smartypants/tree/1.8.1"
             },
             "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
+            "name": "oblik/kirby-entity-field",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OblikStudio/kirby-entity-field.git",
+                "reference": "1b7352460557655cc4fed6dea540a6f446802b6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OblikStudio/kirby-entity-field/zipball/1b7352460557655cc4fed6dea540a6f446802b6f",
+                "reference": "1b7352460557655cc4fed6dea540a6f446802b6f",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": "^3.7",
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "link-field"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oblik Studio",
+                    "email": "hello@oblik.studio",
+                    "homepage": "https://oblik.studio/"
+                },
+                {
+                    "name": "Hristiyan Dodov",
+                    "email": "h.dodov@gmail.com",
+                    "homepage": "https://dodov.dev/"
+                }
+            ],
+            "description": "Kirby field that acts as a one-entry structure.",
+            "keywords": [
+                "kirby",
+                "kirby-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/OblikStudio/kirby-entity-field/issues",
+                "source": "https://github.com/OblikStudio/kirby-entity-field"
+            },
+            "time": "2022-08-12T07:37:14+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
