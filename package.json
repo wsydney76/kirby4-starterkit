@@ -4,8 +4,8 @@
   "description": "Just the Kirby starter kit, but added a kitchen sink page in order to demonstrate all field types, including some customizations.",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/styles.css --watch",
-    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/css/styles.css --minify"
+    "dev": "npx tailwindcss -i ./resources/css/tailwind.css -o ./web/assets/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./resources/css/tailwind.css -o ./web/assets/css/styles.css --minify"
   },
   "repository": {
     "type": "git",
