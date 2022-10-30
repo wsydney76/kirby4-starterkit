@@ -7,6 +7,7 @@ echo (new Kirby([
         'index'    => __DIR__,
         'base'     => $base    = dirname(__DIR__),
         'content'  => $base . '/content',
+        'config'  => $base . '/config',
         'site'     => $base . '/site',
         'storage'  => $storage = $base . '/storage',
         'accounts' => $storage . '/accounts',
