@@ -56,3 +56,7 @@ node_modules
 # PHP dependencies
 # ---------------
 /vendor
+
+# Environment variables
+# ---------------------
+/.env
