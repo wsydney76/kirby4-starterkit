@@ -8,4 +8,4 @@ fieldsets:
   - gallery
   - video
   - line
-
+pretty: true
