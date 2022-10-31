@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./site/**/*.php",
-    "./site/**/*.twig",
+    "./templates/**/*.twig",
   ],
   theme: {
     extend: {
