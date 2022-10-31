@@ -1,6 +1,14 @@
 <?php
 
+use Kirby\Cms\App as Kirby;
+
 require '../vendor/autoload.php';
+
+// Load dotenv?
+if (class_exists(Dotenv\Dotenv::class)) {
+    Dotenv\Dotenv::createUnsafeImmutable('..')->safeLoad();
+}
+
 
 echo (new Kirby([
     'roots' => [

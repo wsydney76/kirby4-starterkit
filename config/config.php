@@ -8,11 +8,6 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 
-// Load dotenv?
-if (class_exists(Dotenv\Dotenv::class)) {
-    Dotenv\Dotenv::createUnsafeImmutable('..')->safeLoad();
-}
-
 $isDev = $_SERVER['ENVIRONMENT'] === 'dev';
 $isProd = $_SERVER['ENVIRONMENT'] === 'production';
 
