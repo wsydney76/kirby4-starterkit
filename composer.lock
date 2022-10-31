@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "158458cbc69a8daec2cae42cbe1aca68",
+    "content-hash": "8b82a956270ae2f52e2377c4c9552efc",
     "packages": [
         {
             "name": "amteich/kirby-twig",
@@ -50,61 +50,6 @@
                 "source": "https://github.com/amteich/kirby-twig/tree/4.1.7"
             },
             "time": "2022-10-05T08:11:06+00:00"
-        },
-        {
-            "name": "beebmx/kirby-env",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beebmx/kirby-env.git",
-                "reference": "f483198d00745c388fed54c26319625b53054c11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beebmx/kirby-env/zipball/f483198d00745c388fed54c26319625b53054c11",
-                "reference": "f483198d00745c388fed54c26319625b53054c11",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": "^8.0.2",
-                "vlucas/phpdotenv": "^5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.0"
-            },
-            "type": "kirby-plugin",
-            "autoload": {
-                "files": [
-                    "helpers.php"
-                ],
-                "psr-4": {
-                    "Beebmx\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fernando Gutierrez",
-                    "email": "fernando@beeb.mx"
-                }
-            ],
-            "description": "Enable env variables to Kirby 3",
-            "keywords": [
-                "dotenv",
-                "env",
-                "kirby",
-                "kirby-3",
-                "phpdotenv"
-            ],
-            "support": {
-                "issues": "https://github.com/beebmx/kirby-env/issues",
-                "source": "https://github.com/beebmx/kirby-env/tree/4.1.0"
-            },
-            "time": "2022-07-04T16:14:56+00:00"
         },
         {
             "name": "claviska/simpleimage",

@@ -12,7 +12,7 @@
     "amteich/kirby-twig": "^4.1",
     "oblik/kirby-entity-field": "^2.0",
     "jg/kirby-fields-block": "^1.1",
-    "beebmx/kirby-env": "^4.1"
+    "vlucas/phpdotenv": "^5.5"
   },
   "autoload": {
     "psr-4": {

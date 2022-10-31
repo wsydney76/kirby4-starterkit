@@ -8,9 +8,13 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 
-\Beebmx\KirbyEnv::load('..');
+// Load dotenv?
+if (class_exists(Dotenv\Dotenv::class)) {
+    Dotenv\Dotenv::createUnsafeImmutable('..')->safeLoad();
+}
 
-$isDev = env('ENVIRONMENT') === 'dev';
+$isDev = $_SERVER['ENVIRONMENT'] === 'dev';
+$isProd = $_SERVER['ENVIRONMENT'] === 'production';
 
 return [
     'debug' => $isDev,
@@ -21,5 +25,5 @@ return [
     'amteich.twig.env.extensions' => [
         'site' => 'site\\twigextensions\\SiteExtension'
     ],
-    'amteich.twig.cache' => !$isDev
+    'amteich.twig.cache' => $isProd
 ];
