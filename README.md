@@ -8,6 +8,8 @@ Switched CSS to Tailwind CSS.
 
 Switched PHP templates to Twig.
 
+Changed folder setup according to [Kirby Docs](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup).
+
 Todo: Better handling of responsive images (sizes etc.)
 
 <img src="http://getkirby.com/assets/images/github/starterkit.jpg" width="300">
