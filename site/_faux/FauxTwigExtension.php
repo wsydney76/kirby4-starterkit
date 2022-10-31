@@ -1,11 +1,11 @@
 <?php
 /**
- * FauxTwigExtension for Craft CMS 3.x
+ * FauxTwigExtension for Kirby (idea stolen from Craft CMS)
  *
  * This is intended to be used with the Symfony Plugin for PhpStorm:
  * https://plugins.jetbrains.com/plugin/7219-symfony-plugin
  *
- * It will provide full auto-complete for craft.app. and and many other useful things
+ * It will provide full auto-complete for Kirby objects
  * in your Twig templates.
  *
  * Place the file somewhere in your project or include it via PhpStorm Settings -> Include Path.
