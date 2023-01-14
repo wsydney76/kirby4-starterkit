@@ -170,6 +170,13 @@ class Environment
             }
         }
 
+        // add plugin template paths
+        foreach ($kirby->extensions('templates') as $templatepath => $root) {
+            if (Str::endsWith(strtolower($root), '.twig')) {
+                $loader->addPath(str_replace($templatepath . '.twig', '', $root));
+            }
+        }
+
         // is viewpath in a plugin, add the pluginpath
         if ($viewPath != $this->templateDir) {
             $loader->addPath($viewPath);
@@ -226,6 +233,10 @@ class Environment
 
         // Make sure the instance is stored / overwritten
         static::$instance = $this;
+    }
+
+    public function addGlobal($name, $value) {
+        $this->twig->addGlobal($name, $value);
     }
 
     /**
