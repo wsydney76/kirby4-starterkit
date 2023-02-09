@@ -254,16 +254,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.9.0",
+            "version": "3.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "066b0506a81fdd331edc54add601d907a61ebbb4"
+                "reference": "617a07aa0151aa4b1a3735b3b5e1a41ccc244a43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/066b0506a81fdd331edc54add601d907a61ebbb4",
-                "reference": "066b0506a81fdd331edc54add601d907a61ebbb4",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/617a07aa0151aa4b1a3735b3b5e1a41ccc244a43",
+                "reference": "617a07aa0151aa4b1a3735b3b5e1a41ccc244a43",
                 "shasum": ""
             },
             "require": {
@@ -350,7 +350,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-01-17T12:55:18+00:00"
+            "time": "2023-01-31T10:07:31+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -463,16 +463,16 @@
         },
         {
             "name": "jg/kirby-fields-block",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jongacnik/kirby-fields-block.git",
-                "reference": "0f19f77c12c5f9ce853df85f3a4172f876c0b7a3"
+                "reference": "e56c4d109edd921a1b4436e3df0e64b1117f1b83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jongacnik/kirby-fields-block/zipball/0f19f77c12c5f9ce853df85f3a4172f876c0b7a3",
-                "reference": "0f19f77c12c5f9ce853df85f3a4172f876c0b7a3",
+                "url": "https://api.github.com/repos/jongacnik/kirby-fields-block/zipball/e56c4d109edd921a1b4436e3df0e64b1117f1b83",
+                "reference": "e56c4d109edd921a1b4436e3df0e64b1117f1b83",
                 "shasum": ""
             },
             "require": {
@@ -492,9 +492,9 @@
             "description": "Kirby Fields Block",
             "support": {
                 "issues": "https://github.com/jongacnik/kirby-fields-block/issues",
-                "source": "https://github.com/jongacnik/kirby-fields-block/tree/v1.2.0"
+                "source": "https://github.com/jongacnik/kirby-fields-block/tree/v1.2.1"
             },
-            "time": "2023-01-13T00:17:39+00:00"
+            "time": "2023-01-22T19:02:00+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1345,16 +1345,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.5.0",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72"
+                "reference": "a6e0510cc793912b451fd40ab983a1d28f611c15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3ffcf4b7d890770466da3b2666f82ac054e7ec72",
-                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a6e0510cc793912b451fd40ab983a1d28f611c15",
+                "reference": "a6e0510cc793912b451fd40ab983a1d28f611c15",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1405,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.5.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -1417,7 +1417,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-27T12:28:18+00:00"
+            "time": "2023-02-08T07:49:20+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
