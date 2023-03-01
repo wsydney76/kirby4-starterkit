@@ -4,53 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b82a956270ae2f52e2377c4c9552efc",
+    "content-hash": "22170155d427beff5856f5015c905b7f",
     "packages": [
-        {
-            "name": "amteich/kirby-twig",
-            "version": "4.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/amteich/kirby-twig.git",
-                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/amteich/kirby-twig/zipball/2df5634037c26a031ffa7c50ed8f296b72762b82",
-                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.1",
-                "twig/twig": "^3.4"
-            },
-            "type": "kirby-plugin",
-            "autoload": {
-                "psr-4": {
-                    "amteich\\Twig\\": "src/classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Zehetner",
-                    "email": "christian@am-teich.com"
-                },
-                {
-                    "name": "Florens Verschelde",
-                    "email": "florens@fvsch.com"
-                }
-            ],
-            "description": "Twig templating support for Kirby CMS",
-            "support": {
-                "issues": "https://github.com/amteich/kirby-twig/issues",
-                "source": "https://github.com/amteich/kirby-twig/tree/4.2.3"
-            },
-            "time": "2022-12-19T16:16:18+00:00"
-        },
         {
             "name": "claviska/simpleimage",
             "version": "3.7.2",
@@ -401,24 +356,24 @@
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "a878d45c1914464426dc94da61c9e1d36ae262a8"
+                "reference": "672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/a878d45c1914464426dc94da61c9e1d36ae262a8",
-                "reference": "a878d45c1914464426dc94da61c9e1d36ae262a8",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831",
+                "reference": "672eff8cf1d6fe1ef09ca0f89c4b287d6a3eb831",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0",
-                "phpoption/phpoption": "^1.9"
+                "phpoption/phpoption": "^1.9.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.28 || ^9.5.21"
+                "phpunit/phpunit": "^8.5.32 || ^9.6.3 || ^10.0.12"
             },
             "type": "library",
             "autoload": {
@@ -447,7 +402,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.0"
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.1"
             },
             "funding": [
                 {
@@ -459,7 +414,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-30T15:56:11+00:00"
+            "time": "2023-02-25T20:23:15+00:00"
         },
         {
             "name": "jg/kirby-fields-block",
@@ -801,24 +756,24 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "dc5ff11e274a90cc1c743f66c9ad700ce50db9ab"
+                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dc5ff11e274a90cc1c743f66c9ad700ce50db9ab",
-                "reference": "dc5ff11e274a90cc1c743f66c9ad700ce50db9ab",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
+                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8",
-                "phpunit/phpunit": "^8.5.28 || ^9.5.21"
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "phpunit/phpunit": "^8.5.32 || ^9.6.3 || ^10.0.12"
             },
             "type": "library",
             "extra": {
@@ -860,7 +815,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.0"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.9.1"
             },
             "funding": [
                 {
@@ -872,7 +827,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-30T15:51:26+00:00"
+            "time": "2023-02-25T19:38:58+00:00"
         },
         {
             "name": "psr/log",
@@ -1502,6 +1457,50 @@
                 }
             ],
             "time": "2022-10-16T01:01:54+00:00"
+        },
+        {
+            "name": "wearejust/kirby-twig",
+            "version": "4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wearejust/kirby-twig.git",
+                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wearejust/kirby-twig/zipball/2df5634037c26a031ffa7c50ed8f296b72762b82",
+                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1",
+                "twig/twig": "^3.4"
+            },
+            "type": "kirby-plugin",
+            "autoload": {
+                "psr-4": {
+                    "amteich\\Twig\\": "src/classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Zehetner",
+                    "email": "christian@am-teich.com"
+                },
+                {
+                    "name": "Florens Verschelde",
+                    "email": "florens@fvsch.com"
+                }
+            ],
+            "description": "Twig templating support for Kirby CMS",
+            "support": {
+                "source": "https://github.com/wearejust/kirby-twig/tree/4.2.3"
+            },
+            "time": "2022-12-19T16:16:18+00:00"
         }
     ],
     "packages-dev": [],
