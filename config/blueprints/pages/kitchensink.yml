@@ -385,8 +385,8 @@ tabs:
                         options:
                           - h2
                           - h3
-                    - text
-                    - list
+                  - text
+                  - list
               media:
                 label: Media
                 type: group
