@@ -1,14 +1,21 @@
-{% for block in blocks %}
+<div class="my-8">
 
-    {% if block.type == 'image' %}
-        {% include "@templates/blocks/image.twig" with {
-            block,
-            width: [400, 640]
-        } only %}
-    {% else %}
-        {% include "@templates/blocks/#{block.type}.twig" with {
-            block
-        } only %}
+    {% if heading is defined and heading %}
+        <h2 class="text-2xl font-bold">{{ heading }}</h2>
     {% endif %}
 
-{% endfor %}
+    {% for block in blocks %}
+
+        {% if block.type == 'image' %}
+            {% include "@templates/blocks/image.twig" with {
+                block,
+                width: [400, 640]
+            } only %}
+        {% else %}
+            {% include "@templates/blocks/#{block.type}.twig" with {
+                block
+            } only %}
+        {% endif %}
+
+    {% endfor %}
+</div>

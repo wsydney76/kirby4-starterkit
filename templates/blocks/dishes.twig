@@ -1,0 +1,16 @@
+
+<table>
+    {% for dish in block.rows.toStructure %}
+    	<tr>
+            <td class="font-bold">
+                {{ dish.dish }}
+            </td>
+            <td>
+                {{ dish.description }}
+            </td>
+            <td class="whitespace-nowrap">
+                {{ dish.price.toFloat|number_format(2, ',') }} USD
+            </td>
+        </tr>
+    {% endfor %}
+</table>

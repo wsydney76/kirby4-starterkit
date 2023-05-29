@@ -1,0 +1,54 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+<div class="prose">
+
+    {% set contact = page.contact.toObject %}
+
+    <dl>
+        <dt class="font-bold my-4">
+            Photo
+        </dt>
+        <dd>
+            {% set images = contact.photo.toFiles %}
+
+
+            {% for image  in images %}
+
+                {{ img(image, {
+                    transform: {width: 150, ratio: '1/1'}
+                }) }}
+
+            {% endfor %}
+
+
+        <dt class="font-bold my-4">
+            Name
+        </dt>
+        <dd>
+            {{ contact.name }}
+        </dd>
+        <dt class="font-bold my-4">
+            Email
+        </dt>
+        <dd>
+            {{ email(contact.email) }}
+        </dd>
+        <dt class="font-bold my-4">
+            Phone
+        </dt>
+        <dd>
+            {{ tel(contact.phone) }}
+        </dd>
+
+        <dt class="font-bold my-4">
+            Body
+        </dt>
+        <dd>
+            {% include '@templates/partials/blocks.twig' with {
+                blocks: contact.body.toBlocks,
+            } only %}
+        </dd>
+
+    </dl>
+
+</div>

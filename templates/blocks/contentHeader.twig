@@ -1,0 +1,18 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+{% set images = block.logo.toFiles %}
+
+<div class="flex">
+    {% for image  in images %}
+
+        {{ img(image, {
+            transform: {width: 150, ratio: '16/9'}
+        }) }}
+
+    {% endfor %}
+</div>
+
+
+<h2>
+    {{ block.title }}
+</h2>

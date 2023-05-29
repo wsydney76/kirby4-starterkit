@@ -1,14 +1,87 @@
 {% extends "@templates/layouts/main.twig" %}
 
 {% block content %}
-    <article class="max-w-xl mx-auto">
+    <article class="max-w-xl mx-auto space-y-12">
         {% include '@templates/partials/intro.twig' %}
 
 
+        <div>
+            {{ _self.heading('Text Fields') }}
+
+            {% include '@templates/partials/kitchensink/textinputs.twig' with {
+                page
+            } only %}
+        </div>
+
+
+        <div>
+            {{ _self.heading('Relation Fields') }}
+            {% include '@templates/partials/kitchensink/relations.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Number Fields') }}
+            {% include '@templates/partials/kitchensink/numberfields.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Date Fields') }}
+            {% include '@templates/partials/kitchensink/datefields.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Contact Fields') }}
+            {% include '@templates/partials/kitchensink/contactfields.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Select Fields') }}
+            {% include '@templates/partials/kitchensink/selectfields.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Color Fields') }}
+            {% include '@templates/partials/kitchensink/colorfields.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Object Field') }}
+            {% include '@templates/partials/kitchensink/contact.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Structure Field') }}
+            {% include '@templates/partials/kitchensink/structure.twig' with {
+                page
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Default Blocks Field') }}
+        </div>
+        
         <div class="prose prose-lg">
             {% include '@templates/partials/blocks.twig' with {
-                blocks: page.blocksField.toBlocks
+                blocks: page.blocksField.toBlocks,
             } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Custom Blocks Field') }}
         </div>
 
         <div class="prose prose-lg mt-12">
@@ -16,6 +89,31 @@
                 blocks: page.blocksField2.toBlocks
             } only %}
         </div>
-        
+
+        <div>
+            {{ _self.heading('Nested Blocks') }}
+        </div>
+
+        <div class="prose prose-lg mt-12">
+            {% include '@templates/partials/blocks.twig' with {
+                blocks: page.entityBlocks.toBlocks
+            } only %}
+        </div>
+
+        <div>
+            {{ _self.heading('Layout Field') }}
+        </div>
+
+
+        <div class="lg:-mx-44 xl:-mx-64 2xl:-mx-96">
+            {% include '@templates/partials/layouts.twig' with {
+                field: page.layoutField
+            } only %}
+        </div>
+
     </article>
 {% endblock %}
+
+{% macro heading(text) %}
+    <h2 class="text-4xl border-t-2 border-gray-500 pt-4 font-bold mb-8 -mx-16 text-center">{{ text }}</h2>
+{% endmacro %}

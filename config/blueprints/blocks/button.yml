@@ -6,6 +6,7 @@ tabs:
     fields:
       link:
         type: url
+        required: true
       text:
         type: text
   styles:

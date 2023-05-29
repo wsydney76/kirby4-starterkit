@@ -1,0 +1,5 @@
+<div class="px-8 py-2" style="background-color: {{ block.bgColor }}">
+    {% include '@templates/partials/blocks.twig' with {
+        blocks: block.contentBlocks.toBlocks
+    } only %}
+</div>

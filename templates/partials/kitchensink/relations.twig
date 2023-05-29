@@ -1,0 +1,64 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+<div class="space-y-4">
+
+    
+    <div>
+        {% set pages = page.related.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set pages = page.related2.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set pages = page.related3.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set images = page.images1.toFiles %}
+
+        <div class="flex">
+            {% for image  in images %}
+
+                {{ img(image, {
+                    transform: {width: 150, ratio: '16/9'}
+                }) }}
+
+            {% endfor %}
+        </div>
+    </div>
+
+    <div>
+        {% set images = page.images2.toFiles %}
+
+        <div class="flex">
+            {% for image  in images %}
+
+                {{ img(image, {
+                    transform: {width: 150, ratio: '16/9'}
+                }) }}
+
+            {% endfor %}
+        </div>
+    </div>
+    
+</div>

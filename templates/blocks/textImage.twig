@@ -1,0 +1,29 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+<div class="flex space-x-4">
+
+    <div class="flex-shrink-0">
+        {% set leftCol = block.leftCol.toObject %}
+
+        <div>
+            {% set image = leftCol.image.toFile %}
+            {% if image %}
+                {{ img(image, {
+                    transform: {width: 100, ratio: '16/9'}
+                }) }}
+            {% endif %}
+            <div class="text-sm w-36">
+                {{ leftCol.caption }}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-sm">
+        {% include '@templates/partials/blocks.twig' with {
+            blocks: block.blocks.toBlocks
+        } only %}
+    </div>
+
+
+</div>
