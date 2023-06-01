@@ -1,6 +1,8 @@
 label: Nested Blocks with Preview
 type: blocks
 fieldsets:
+  - text
+  - heading
   contentHeader:
     name: Content Header
     icon: bolt
@@ -11,14 +13,6 @@ fieldsets:
         type: text
       logo:
         type: files
-  contentText:
-    name: Content Text
-    icon: text
-    preview: fields # required
-    wysiwyg: true # recommended
-    fields:
-      text:
-        type: writer
   contentNested:
     name: Nested Content
     icon: circle-nested
@@ -32,14 +26,8 @@ fieldsets:
             label: Nested Blocks
             type: blocks
             fieldsets:
-              text:
-                name: Text
-                icon: text
-                preview: fields # required
-                wysiwyg: true # recommended
-                fields:
-                  text:
-                    type: writer
+              - text
+              - heading
               textImage:
                 name: Image and Content Columns
                 icon: text
@@ -65,7 +53,7 @@ fieldsets:
                             type: text
                       contentColumn:
                         label: Content Column
-                        type: writer
+                        type: blocks
                         width: 2/3
                   settings:
                     label: Settings

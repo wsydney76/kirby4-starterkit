@@ -8,10 +8,8 @@
     "starterkit"
   ],
   "require": {
-    "getkirby/cms": "^3.9",
+    "getkirby/cms": "dev-v4/develop as 4.0.0-alpha.1",
     "wearejust/kirby-twig": "^4.1",
-    "oblik/kirby-entity-field": "^2.0",
-    "jg/kirby-fields-block": "^1.1",
     "vlucas/phpdotenv": "^5.5"
   },
   "autoload": {
