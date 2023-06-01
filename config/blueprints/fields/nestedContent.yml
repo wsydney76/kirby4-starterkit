@@ -13,6 +13,8 @@ fieldsets:
         type: text
       logo:
         type: files
+        layout: cards
+        size: tiny
   contentNested:
     name: Nested Content
     icon: circle-nested
