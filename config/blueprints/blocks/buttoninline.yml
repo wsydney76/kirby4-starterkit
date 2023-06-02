@@ -1,6 +1,5 @@
 name: Button (Inline Editing)
 icon: bolt
-label: "{{ text }} -> {{ link }}"
 preview: fields
 wysiwyg: true
 tabs:
@@ -8,11 +7,15 @@ tabs:
     fields:
       link:
         type: url
+        width: 1/2
       text:
         type: text
+        width: 1/2
   styles:
     fields:
       class:
         type: text
+        width: 1/2
       id:
         type: text
+        width: 1/2

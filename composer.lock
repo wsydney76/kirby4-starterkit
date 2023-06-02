@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b094745da52fe5fdcbff8581cbcb58e",
+    "content-hash": "55c9fd799af09d242ee2a155c715381e",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -213,16 +213,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "dev-v4/develop",
+            "version": "dev-v4/main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "f56a084ff4069b04be7aa253aa12fa15ac3d1dab"
+                "reference": "620802440bb6608992e696ec56830a700f50913e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/f56a084ff4069b04be7aa253aa12fa15ac3d1dab",
-                "reference": "f56a084ff4069b04be7aa253aa12fa15ac3d1dab",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/620802440bb6608992e696ec56830a700f50913e",
+                "reference": "620802440bb6608992e696ec56830a700f50913e",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-05-30T20:14:36+00:00"
+            "time": "2023-06-01T19:26:56+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -1568,9 +1568,9 @@
     "aliases": [
         {
             "package": "getkirby/cms",
-            "version": "dev-v4/develop",
-            "alias": "4.0.0-alpha.1",
-            "alias_normalized": "4.0.0.0-alpha1"
+            "version": "dev-v4/main",
+            "alias": "4.0.0-alpha.2",
+            "alias_normalized": "4.0.0.0-alpha2"
         }
     ],
     "minimum-stability": "stable",

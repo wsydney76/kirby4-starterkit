@@ -50,7 +50,7 @@ Images2:
 
 ----
 
-Authors: - user://dsvZwjAq
+Authors: 
 
 ----
 
@@ -134,7 +134,7 @@ Blocksfield: [{"content":{"text":"<p>Maecenas malesuada. <strong>Donec</strong> 
 
 ----
 
-Blocksfield2: 
+Blocksfield2: [{"content":{"link":"https://example.com","text":"Button Preview"},"id":"8764e016-021d-48a1-a85e-1174ffdb2a2b","isHidden":false,"type":"buttonpreview"}]
 
 ----
 

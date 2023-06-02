@@ -1,0 +1,91 @@
+panel.plugin("cookbook/audio-block", {
+  blocks: {
+    audio: {
+
+      computed: {
+        poster() {
+          return this.content.poster[0] || {};
+        },
+        source() {
+          return this.content.source[0] || {};
+        }
+      },
+
+      data() {
+        return {
+          mime: null
+        };
+      },
+
+      watch: {
+        "source.link": {
+          handler(link) {
+            if (link) {
+              this.$api.get(link).then(file => {
+                this.mime = file.mime;
+              });
+            }
+          },
+          immediate: true
+        }
+      },
+
+
+      template: `
+        <k-block-figure
+          :is-empty="!source.url"
+          empty-icon="audio-file"
+          empty-text="No file selected yet …"
+          @open="open"
+          @update="update"
+      >
+          <div class="k-block-type-audio-wrapper">
+              <div>
+                  <k-aspect-ratio
+                      class="k-block-type-audio-poster"
+                      cover="true"
+                      ratio="1/1"
+                  >
+                      <img
+                          v-if="poster.url"
+                          :src="poster.url"
+                          alt=""
+                      >
+                  </k-aspect-ratio>
+              </div>
+              <div @dblclick.stop>
+                  <k-writer
+                      :inline="true"
+                      :marks="false"
+                      :placeholder="field('title').placeholder"
+                      :value="content.title"
+                      class="k-block-type-audio-title"
+                      @input="update({ title: $event })"
+                  />
+                  <k-writer
+                      :inline="true"
+                      :marks="false"
+                      :placeholder="field('subtitle').placeholder"
+                      :value="content.subtitle"
+                      class="k-block-type-audio-subtitle"
+                      @input="update({ subtitle: $event })"
+                  />
+                  <k-writer
+                      :inline="true"
+                      :marks="false"
+                      :placeholder="field('description').placeholder"
+                      :value="content.description"
+                      class="k-block-type-audio-description"
+                      @input="update({ description: $event })"
+                  />
+                  <audio class="k-block-type-audio-element" controls>
+                      <source :src="source.url" :type="mime">
+                  </audio>
+              </div>
+          </div>
+      </k-block-figure>
+      `
+    }
+  },
+});
+

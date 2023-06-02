@@ -452,6 +452,15 @@ tabs:
                 fieldsets:
                   - button
                   - buttoninline
+                  buttonpreview:
+                    name: Button (Preview)
+                    icon: bolt
+                    fields:
+                      link:
+                        type: url
+                      text:
+                        type: text
+                  - audio
 
   - label: Layout
     fields:

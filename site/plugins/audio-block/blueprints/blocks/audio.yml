@@ -17,12 +17,15 @@ tabs:
         multiple: false
         width: 1/2
       title:
+        label: Song Title
         type: text
         placeholder: Title
       subtitle:
+        label: Song Subtitle
         type: text
         placeholder: Subtitle
       description:
+        label: Song Description
         type: writer
         icon: text
         inline: true

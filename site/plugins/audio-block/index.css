@@ -1,1 +1,35 @@
-.k-block-type-audio-wrapper{display:flex;padding:1rem;background:black;color:#fff;width:560px}.k-block-type-audio-poster{width:12rem;margin-right:1rem;background:#333}.k-block-type-audio-title,.k-block-type-audio-subtitle{font-size:1.5rem}.k-block-type-audio-title{font-weight:600}.k-block-type-audio-subtitle{margin-bottom:1rem;color:#999}.k-block-type-audio-description{line-height:1.5}.k-block-type-audio-element{margin-top:2rem;height:2rem}
+.k-block-type-audio-wrapper {
+  display: flex;
+  padding: 1rem;
+  background: black;
+  color: #fff;
+  width: 560px
+}
+
+.k-block-type-audio-poster {
+  width: 12rem;
+  margin-right: 1rem;
+  background: #333
+}
+
+.k-block-type-audio-title, .k-block-type-audio-subtitle {
+  font-size: 1.5rem
+}
+
+.k-block-type-audio-title {
+  font-weight: 600
+}
+
+.k-block-type-audio-subtitle {
+  margin-bottom: 1rem;
+  color: #999
+}
+
+.k-block-type-audio-description {
+  line-height: 1.5
+}
+
+.k-block-type-audio-element {
+  margin-top: 2rem;
+  height: 2rem
+}

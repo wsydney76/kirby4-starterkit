@@ -8,7 +8,7 @@
     "starterkit"
   ],
   "require": {
-    "getkirby/cms": "dev-v4/develop as 4.0.0-alpha.1",
+    "getkirby/cms": "dev-v4/main as 4.0.0-alpha.2",
     "wearejust/kirby-twig": "^4.1",
     "vlucas/phpdotenv": "^5.5"
   },
