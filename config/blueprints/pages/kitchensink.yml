@@ -91,7 +91,9 @@ tabs:
             extends: fields/relatedPages
             label: Related Pages (Cards)
             layout: cards
-            size: tiny
+            size: medium
+            image:
+              ratio: 3/2
 
           images: fields/images
 
@@ -99,8 +101,10 @@ tabs:
             label: Images (Optimize Files On Upload)
             extends: fields/images2
             layout: cards
-            size: tiny
+            size: small
             help: Images will be cropped to 800x400px on upload
+            image:
+              ratio: 3/2
 
           authors:
             label: Authors

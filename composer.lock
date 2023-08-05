@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a531ee83180555ca18cc34e1463fbac1",
+    "content-hash": "aea1dd513b559ec355c60dd3033baf3c",
     "packages": [
         {
             "name": "claviska/simpleimage",
-            "version": "4.0.4",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "a447473883e5dd0daa0d014ae849f0db5b8a1d08"
+                "reference": "b25690f0fc25b2f0b91731370465a3b4e52ea587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/a447473883e5dd0daa0d014ae849f0db5b8a1d08",
-                "reference": "a447473883e5dd0daa0d014ae849f0db5b8a1d08",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/b25690f0fc25b2f0b91731370465a3b4e52ea587",
+                "reference": "b25690f0fc25b2f0b91731370465a3b4e52ea587",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             "description": "A PHP class that makes working with images as simple as possible.",
             "support": {
                 "issues": "https://github.com/claviska/SimpleImage/issues",
-                "source": "https://github.com/claviska/SimpleImage/tree/4.0.4"
+                "source": "https://github.com/claviska/SimpleImage/tree/4.0.5"
             },
             "funding": [
                 {
@@ -57,7 +57,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-08T14:27:59+00:00"
+            "time": "2023-06-05T14:32:39+00:00"
         },
         {
             "name": "composer/semver",
@@ -217,16 +217,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "509b81bec98570014f74c8c612ff393948858349"
+                "reference": "f0d04481319f412ffec9304cc4f45e2652c4fc85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/509b81bec98570014f74c8c612ff393948858349",
-                "reference": "509b81bec98570014f74c8c612ff393948858349",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/f0d04481319f412ffec9304cc4f45e2652c4fc85",
+                "reference": "f0d04481319f412ffec9304cc4f45e2652c4fc85",
                 "shasum": ""
             },
             "require": {
-                "claviska/simpleimage": "4.0.4",
+                "claviska/simpleimage": "4.0.5",
                 "composer/semver": "3.3.2",
                 "ext-ctype": "*",
                 "ext-curl": "*",
@@ -310,7 +310,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-06-13T08:13:12+00:00"
+            "time": "2023-08-02T14:27:19+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -1366,16 +1366,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.6.1",
+            "version": "v3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd"
+                "reference": "5cf942bbab3df42afa918caeba947f1b690af64b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd",
-                "reference": "7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5cf942bbab3df42afa918caeba947f1b690af64b",
+                "reference": "5cf942bbab3df42afa918caeba947f1b690af64b",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1421,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.6.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.7.0"
             },
             "funding": [
                 {
@@ -1433,7 +1433,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-08T12:52:13+00:00"
+            "time": "2023-07-26T07:16:09+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1569,8 +1569,8 @@
         {
             "package": "getkirby/cms",
             "version": "dev-v4/main",
-            "alias": "4.0.0-alpha.3",
-            "alias_normalized": "4.0.0.0-alpha3"
+            "alias": "4.0.0-alpha.4",
+            "alias_normalized": "4.0.0.0-alpha4"
         }
     ],
     "minimum-stability": "stable",

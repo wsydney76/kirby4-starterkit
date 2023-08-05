@@ -8,4 +8,5 @@ fieldsets:
   - gallery
   - video
   - line
+  - markdown
 pretty: true

@@ -9,7 +9,7 @@ info: "{{ page.published }}"
 template: test
 empty: No tests yet
 layout: cards
-size: tiny
+size: medium
 sortBy: date desc
 create:
   - kitchensink

@@ -35,8 +35,8 @@ Icon
 # Accounts
 # ---------------
 
-/data/accounts/*
-!/data/accounts/index.html
+# /data/accounts/*
+# !/data/accounts/index.html
 
 # Sessions
 # ---------------
