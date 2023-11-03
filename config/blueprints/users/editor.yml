@@ -1,0 +1,13 @@
+title: Editor
+extends: users/default
+permissions:
+  access:
+    system: false
+    users: false
+  site:
+    update: false
+  pages:
+    delete: false
+  users: false
+  user:
+    changeRole: false

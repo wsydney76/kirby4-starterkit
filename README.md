@@ -1,16 +1,20 @@
 # Kirby Kitchen Sink
 
-Just the Kirby starter kit, but added a kitchen sink page in order to demonstrate all field types, including some customizations.
+Just the Kirby starter kit with a few additions. 
+
+* Added a kitchen sink page in order to demonstrate all field types, including some customizations.
+* Added `editor` role.
 
 Goto Tab Test and page 'Kitchen Sink' in the panel.
 
-Switched CSS to Tailwind CSS.
+## Other changes
 
-Switched PHP templates to Twig.
+Some other changes have been made to the starter kit in order to make it more compatible with other systems in our toolbox.
 
-Changed folder setup according to [Kirby Docs](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup).
-
-Added .env support for environment specific config.
+* Switched CSS to Tailwind CSS.
+* Switched PHP templates to Twig.
+* Changed folder setup according to [Kirby Docs](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup).
+* Added .env support for environment specific config.
 
 Todo: Better handling of responsive images (sizes etc.)
 
