@@ -4,12 +4,12 @@
 {% set baseWidths = [400, 640, 1024] %}
 {% set baseSizes = baseWidths|map(s => "(max-width: #{s}px) #{s}px")|join(', ') %}
 {% set fullWidthSizes = {
-    12: 1280,
-    3: 400,
-    4: 640,
-    6: 640,
-    8: 1024,
-    9: 1024,
+    '12': 1280,
+    '3': 400,
+    '4': 640,
+    '6': 640,
+    '8': 1024,
+    '9': 1024,
 } %}
 
 <div class="space-y-12">
