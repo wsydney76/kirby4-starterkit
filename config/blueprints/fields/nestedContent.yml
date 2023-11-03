@@ -14,7 +14,9 @@ fieldsets:
       logo:
         type: files
         layout: cards
-        size: tiny
+        size: small
+        image:
+          cover: true
   contentNested:
     name: Nested Content
     icon: circle-nested

@@ -3,10 +3,9 @@ title: Album
 
 create:
   title:
-    label: Create Title
+    label: Title
   fields:
     - headline
-    - images
   redirect: false
 
 # Each page can have an icon that is shown in page listings when no preview image is available.

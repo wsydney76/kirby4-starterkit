@@ -506,10 +506,14 @@ tabs:
           - quote
           pages:
             label: "{{ pages.length }} pages"
+            preview: fields
+            wysiwyg: true
             fields:
               pages:
                 extends: fields/pages
-
+                layout: cardlets
+                image:
+                  cover: true
         settings:
           fields:
             class:
