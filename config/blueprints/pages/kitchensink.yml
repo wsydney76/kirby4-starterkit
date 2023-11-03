@@ -63,10 +63,15 @@ tabs:
             label: Writer Field
             type: writer
             help: A simple WYSIWYG editor field for inline content with formats like bold, italic, etc.
+
+          writerfield2:
+            label: Writer Field
+            type: writer
+            help: A simple WYSIWYG editor field for inline content with limited formatting options.
+            nodes: false
             marks:
               - bold
               - italic
-              - strike
 
           listfield:
             label: List Field
