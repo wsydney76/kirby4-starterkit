@@ -14,6 +14,13 @@ Added .env support for environment specific config.
 
 Todo: Better handling of responsive images (sizes etc.)
 
+## Installation with DDEV
+
+* Clone this repo into a new folder, cd into this folder
+* Run `bash setup/install`
+* Open http://<yourdomain>/panel in your browser in order to create a new admin user
+
+
 <img src="http://getkirby.com/assets/images/github/starterkit.jpg" width="300">
 
 
