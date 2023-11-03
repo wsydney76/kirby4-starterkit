@@ -14,11 +14,12 @@ $isProd = $_SERVER['ENVIRONMENT'] === 'production';
 return [
     'debug' => $isDev,
     'panel.install' => true,
+    'panel.css' => 'assets/css/custom-panel.css',
     'thumbs' => [
         'format' => 'webp'
     ],
     'amteich.twig.env.extensions' => [
         'site' => 'site\\twigextensions\\SiteExtension'
     ],
-    'amteich.twig.cache' => $isProd
+    'amteich.twig.cache' => $isProd,
 ];
