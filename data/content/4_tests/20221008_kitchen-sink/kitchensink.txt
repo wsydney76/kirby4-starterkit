@@ -232,9 +232,9 @@ body: '[{"content":{"text":"<p>Vivamus in erat ut urna cursus vestibulum. Vestib
 Addresses:
 
 - 
-  street: Danziger Str. 15a
-  zip: "85386"
-  city: Eching
+  street: Hauptstraße 16
+  zip: "82229"
+  city: Seefeld
   description: >
     Nullam sagittis. Praesent egestas neque
     eu enim. Suspendisse pulvinar, augue ac
@@ -251,9 +251,9 @@ Addresses:
     email: info@example.com
   body: '[{"content":{"text":"<p>Phasellus viverra nulla ut metus varius laoreet. Vestibulum dapibus nunc ac augue. Nunc nec neque. Cras varius. Pellentesque posuere.<\/p>"},"id":"85fefe6b-8df3-4e2f-9e1b-26a450695e68","isHidden":false,"type":"text"}]'
 - 
-  street: Rheinlandstraße 24
-  zip: "42579"
-  city: Heiligenhaus
+  street: Südring 24
+  zip: "12345"
+  city: Kleinfinstenich
   description: >
     Praesent nec nisl a purus blandit
     viverra. Praesent nonummy mi in odio.
