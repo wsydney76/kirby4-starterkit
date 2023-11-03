@@ -8,7 +8,7 @@
     "starterkit"
   ],
   "require": {
-    "getkirby/cms": "dev-v4/main as 4.0.0-alpha.4",
+    "getkirby/cms": "^4.0.0-beta.3",
     "wearejust/kirby-twig": "^4.1",
     "vlucas/phpdotenv": "^5.5"
   },
@@ -23,7 +23,7 @@
     },
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.0.2"
+      "php": "8.1"
     }
   },
   "scripts": {
