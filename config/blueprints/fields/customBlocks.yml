@@ -23,6 +23,7 @@ fieldsets:
             placeholder: field.blocks.text.placeholder
             inline: true
       - list
+      - code
   media:
     label: Media
     type: group
