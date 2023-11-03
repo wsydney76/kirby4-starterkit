@@ -463,59 +463,22 @@ tabs:
 
       - width: 1/1
         fields:
+          gap1:
+            type: gap
+            width: 1/6
           blocksField:
             type: blocks
             label: Default Blocks Field
-            width: 1/2
+            width: 2/3
 
-          blocksField2:
-            type: blocks
-            label: Customized Blocks Field
-            width: 1/2
-            fieldsets:
-              text:
-                label: Text
-                type: group
-                fieldsets:
-                  heading:
-                    extends: blocks/heading
-                    fields:
-                      level:
-                        options:
-                          - h2
-                          - h3
-                  - text
-                  text2:
-                    name: Inline Text
-                    extends: blocks/text
-                    fields:
-                      text:
-                        type: writer
-                        nodes: false
-                        placeholder: field.blocks.text.placeholder
-                        inline: true
-                  - list
-              media:
-                label: Media
-                type: group
-                fieldsets:
-                  - image
-                  - gallery
-              custom:
-                label: Custom
-                type: group
-                fieldsets:
-                  - button
-                  - buttoninline
-                  buttonpreview:
-                    name: Button (Preview)
-                    icon: bolt
-                    fields:
-                      link:
-                        type: url
-                      text:
-                        type: text
-                  - audio
+  - label: Customized Blocks
+    fields:
+      gap2:
+        type: gap
+        width: 1/6
+      blocksField3:
+        extends: fields/customBlocks
+        width: 2/3
 
   - label: Layout
     fields:

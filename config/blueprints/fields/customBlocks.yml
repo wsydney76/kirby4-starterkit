@@ -1,0 +1,46 @@
+type: blocks
+label: Customized Blocks Field
+fieldsets:
+  text:
+    label: Text
+    type: group
+    fieldsets:
+      heading:
+        extends: blocks/heading
+        fields:
+          level:
+            options:
+              - h2
+              - h3
+      - text
+      text2:
+        name: Inline Text
+        extends: blocks/text
+        fields:
+          text:
+            type: writer
+            nodes: false
+            placeholder: field.blocks.text.placeholder
+            inline: true
+      - list
+  media:
+    label: Media
+    type: group
+    fieldsets:
+      - image
+      - gallery
+  custom:
+    label: Custom
+    type: group
+    fieldsets:
+      - button
+      - buttoninline
+      buttonpreview:
+        name: Button (Preview)
+        icon: bolt
+        fields:
+          link:
+            type: url
+          text:
+            type: text
+      - audio
