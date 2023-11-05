@@ -73,6 +73,13 @@ tabs:
               - bold
               - italic
 
+          writerfield3:
+            label: Writer Field
+            type: writer
+            help: A simple WYSIWYG editor field for inline content with toolbar.
+            toolbar:
+              inline: false
+
           listfield:
             label: List Field
             type: list
