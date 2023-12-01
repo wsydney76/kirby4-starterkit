@@ -15,9 +15,16 @@
 
         
         <div>
-            {{ _self.heading('Link') }}
-            
+            {{ _self.heading('Link2') }}
+            {{ page.link() }}<br>
             {{ page.link.toUrl() }}
+            <hr>
+            {{ page.link2() }}<br>
+            {{ page.link2.toUrl() }}
+            <hr>
+            {{ page.link3() }}<br>
+            {{ page.link3.toUrl() }}
+
         </div>
 
         <div>

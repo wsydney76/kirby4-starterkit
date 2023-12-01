@@ -38,6 +38,14 @@ Link: page://T18qI7ZUqldFRwhl
 
 ----
 
+Link2: file://Jc0l1BA0i5z0QjRf
+
+----
+
+Link3: htts://example.com
+
+----
+
 Related:
 
 - page://nFku43Ki3pyS9NyM

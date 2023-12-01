@@ -85,12 +85,28 @@ tabs:
             type: list
             help: A simple WYSIWYG editor field for ordered and unordered lists
 
-          relations:
-            label: Relations
+          links:
+            label: Links
             type: headline
+
+          linkhelp:
+            label: Link Help
+            type: info
+            theme: none
+            text: Try different link types below
 
           link:
             type: link
+
+          link2:
+            type: link
+
+          link3:
+            type: link
+
+          relations:
+            label: Relations
+            type: headline
 
           related: fields/relatedPages
 
