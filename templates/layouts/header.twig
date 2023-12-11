@@ -1,0 +1,20 @@
+<header class="relative flex flex-wrap items-center justify-between mb-24 -mx-4">
+
+    <a class="px-4 flex font-semibold" href="{{ site.url }}">
+        {{ site.title }}
+    </a>
+
+    <nav class="pl-4">
+
+        <div class="flex flex-wrap space-x-8">
+
+            {% for item in pages.listed %}
+                <a class="{{ item.isOpen ? 'underline  underline-offset-8' }}" href="{{ item.url }}">{{ item.title }}</a>
+            {% endfor %}
+
+            {% include '@templates/partials/social.twig' %}
+
+        </div>
+
+    </nav>
+</header>

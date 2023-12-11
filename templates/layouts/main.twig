@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white text-black" style="overflow-y: scroll">
+<html lang="en" class="bg-slate-50 text-slate-800" style="overflow-y: scroll">
 <head>
 
     <meta charset="utf-8">
@@ -18,26 +18,7 @@
 </head>
 <body class="px-6 py-12 max-w-screen-xl mx-auto">
 
-<header class="relative flex flex-wrap items-center justify-between mb-24 -mx-4">
-
-    <a class="px-4 flex font-semibold" href="{{ site.url }}">
-        {{ site.title }}
-    </a>
-
-    <nav class="pl-4">
-
-        <div class="flex flex-wrap space-x-8">
-
-            {% for item in pages.listed %}
-                <a class="{{ item.isOpen ? 'underline  underline-offset-8' }}" href="{{ item.url }}">{{ item.title }}</a>
-            {% endfor %}
-
-            {% include '@templates/partials/social.twig' %}
-
-        </div>
-
-    </nav>
-</header>
+{% include '@templates/layouts/header.twig' %}
 
 <main class="main">
 
@@ -48,40 +29,7 @@
 
 </main>
 
-<hr class="mt-16 w-12 border-2 border-black">
-<footer class="pt-4 pb-8 leading-6">
-    <div class="grid lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2">
-            <h2 class="font-bold mb-4"><a href="https://getkirby.com">Made with Kirby</a></h2>
-            <p class="w-1/2 lg:w-48 text-gray-500">
-                Kirby: the file-based CMS that adapts to any project, loved by developers and editors alike
-            </p>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-8 sm:w-2/3">
-            <div>
-                <h2 class="font-bold mb-4">Pages</h2>
-                <ul>
-                    {% for example in pages.listed() %}
-                        <li>
-                            <a class="text-gray-500" href="{{ example.url }}">{{ example.title }}</a>
-                        </li>
-                    {% endfor %}
-
-                </ul>
-            </div>
-            <div>
-                <h2 class="font-bold mb-4">Kirby</h2>
-                <ul>
-                    <li><a class="text-gray-500" href="https://getkirby.com">Website</a></li>
-                    <li><a class="text-gray-500" href="https://getkirby.com/docs">Docs</a></li>
-                    <li><a class="text-gray-500" href="https://forum.getkirby.com">Forum</a></li>
-                    <li><a class="text-gray-500" href="https://chat.getkirby.com">Chat</a></li>
-                    <li><a class="text-gray-500" href="https://github.com/getkirby">GitHub</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+{% include '@templates/layouts/footer.twig' %}
 
 {{ js([
     'assets/js/prism.js',

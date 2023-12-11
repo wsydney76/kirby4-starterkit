@@ -5,8 +5,8 @@
 type: pages
 label: Photography
 parent: kirby.page("photography")
-size: medium
-info: "{{ page.images.count }} image(s)"
+size: large
+info: "{{ page.images.count }} image(s)<br>{{ page.subheadline }}"
 layout: cards
 template: album
 empty: No albums yet

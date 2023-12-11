@@ -28,8 +28,11 @@ columns:
       listed:
         extends: sections/notes
         label: Published
+        help: Example for pagination
         status: listed
-        size: small
+        size: huge
         layout: cards
+        search: true
+        limit: 3
 
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
