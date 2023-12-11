@@ -17,7 +17,7 @@
  *
  * More about models: https://getkirby.com/docs/guide/templates/page-models
  */
-class TestPage extends Page
+class KitchensinksPage extends Page
 {
     public function cover()
     {

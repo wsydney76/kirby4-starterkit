@@ -35,6 +35,6 @@ tabs:
               - about
               - home
               - default
-  - label: Test
+  - label: Kitchen sinks
     sections:
-      tests: sections/tests
+      kitchensinks: sections/kitchensinks

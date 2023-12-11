@@ -5,7 +5,7 @@
 
         {% include '@templates/partials/intro.twig' %}
 
-        {% set tests = page('tests')
+        {% set tests = page('kitchensinks')
             .children()
             .listed()
             .sortBy('date', 'desc')

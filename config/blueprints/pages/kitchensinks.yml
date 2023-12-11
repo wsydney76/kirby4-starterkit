@@ -1,5 +1,5 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Tests
+title: Kitchen sinks
 
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 📖
@@ -13,12 +13,12 @@ columns:
     # (defined in `/site/blueprints/sections/notes.yml` twice with different page status and headline
     sections:
       drafts:
-        extends: sections/tests
+        extends: sections/kitchensinks
         label: Drafts
         status: draft
 
       unlisted:
-        extends: sections/tests
+        extends: sections/kitchensinks
         label: In Review
         status: unlisted
 
@@ -26,10 +26,10 @@ columns:
     # In the second column, we reuse the same section, this time for listed pages and with a different headline
     sections:
       listed:
-        extends: sections/tests
+        extends: sections/kitchensinks
         label: Published
         status: listed
-        size: small
+        size: huge
         layout: cards
 
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages

@@ -3,20 +3,18 @@
 # Sections can have different layouts and display additional information or a preview image
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
 type: pages
-label: Tests
-parent: kirby.page("tests")
+label: Kitchen sinks
+parent: kirby.page("kitchensinks")
 info: "{{ page.published }}"
-template: test
-empty: No tests yet
+template: kitchensink
+empty: No kitchen sinks yet
 layout: cards
 size: medium
 sortBy: date desc
 create:
   - kitchensink
-  - about
 templates:
   - kitchensink
-  - about
 image:
   query: page.cover
   cover: true
