@@ -15,6 +15,7 @@ return [
     'debug' => $isDev,
     'panel.install' => true,
     'panel.css' => 'assets/css/custom-panel.css',
+    'panel.menu' => require __DIR__ . '/panel-menu.php',
     'thumbs' => [
         'format' => 'webp'
     ],
