@@ -11,15 +11,18 @@
     {% set sizes = sizes ?? '' %}
 
     <figure>
-        {{ img(image, {
-            transform: {width, ratio},
-            attr: {
-                class: 'object-cover h-full w-full',
-                loading: 'lazy',
-                sizes: sizes
-            },
-            mode: block.crop.isTrue ? 'crop' : 'resize'
-        } ) }}
+        <a href="{{ image.url }}" data-lightbox>
+
+            {{ img(image, {
+                transform: {width, ratio},
+                attr: {
+                    class: 'object-cover h-full w-full',
+                    loading: 'lazy',
+                    sizes: sizes
+                },
+                mode: block.crop.isTrue ? 'crop' : 'resize'
+            } ) }}
+        </a>
         {% if caption.isNotEmpty %}
             <figcaption>
                 {{ caption }}
