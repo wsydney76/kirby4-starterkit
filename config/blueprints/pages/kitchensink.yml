@@ -104,57 +104,6 @@ tabs:
           link3:
             type: link
 
-          relations:
-            label: Relations
-            type: headline
-
-          related: fields/relatedPages
-
-          related2:
-            extends: fields/relatedPages
-            label: Related Pages (Cardlets)
-            layout: cardlets
-
-          related3:
-            extends: fields/relatedPages
-            label: Related Pages (Cards)
-            layout: cards
-            size: medium
-            image:
-              ratio: 3/2
-
-          related4:
-            extends: fields/relatedPages
-            label: Related Pages (Table)
-            help:  Setup tbd, imagine a few columns...
-            layout: table
-            columns:
-              subheadline:
-                label: Subheadline
-                type: text
-              date:
-                label: Date
-                value: "{{ page.date.toDate('d.m.Y') }}"
-
-          images: fields/images
-
-          images2:
-            label: Images (Optimize Files On Upload)
-            extends: fields/images2
-            layout: cards
-            size: small
-            help: Images will be cropped to 800x400px on upload
-            image:
-              ratio: 3/2
-
-          authors:
-            label: Authors
-            type: users
-
-          tags:
-            label: Tags
-            type: tags
-
       - width: 1/2
         fields:
           numberinputs:
@@ -390,6 +339,78 @@ tabs:
 
               In love,
               Your admin
+
+  - label: Relations
+    columns:
+      - width: 1/2
+        fields:
+          pages:
+            label: Pages
+            type: headline
+
+          related: fields/relatedPages
+
+          related2:
+            extends: fields/relatedPages
+            label: Related Pages (Cardlets)
+            layout: cardlets
+
+          related3:
+            extends: fields/relatedPages
+            label: Related Pages (Cards)
+            layout: cards
+            size: medium
+            image:
+              ratio: 3/2
+
+          related4:
+            extends: fields/relatedPages
+            label: Related Pages (Table)
+            help:  Setup tbd, imagine a few columns...
+            layout: table
+            columns:
+              subheadline:
+                label: Subheadline
+                type: text
+              date:
+                label: Date
+                value: "{{ page.date.toDate('d.m.Y') }}"
+
+      - width: 1/2
+        fields:
+          imagesheadline:
+            label: Images
+            type: headline
+
+          images: fields/images
+
+          imagescardlets:
+            label: Images (Cards)
+            extends: fields/images
+            layout: cardlets
+
+          images2:
+            label: Images (Optimize Files On Upload)
+            extends: fields/images2
+            layout: cards
+            size: medium
+            help: Images will be cropped to 800x400px on upload
+            image:
+              ratio: 3/2
+
+          others:
+            label: Others
+            type: headline
+
+          authors:
+            width: 1/2
+            label: Authors
+            type: users
+
+          tags:
+            width: 1/2
+            label: Tags
+            type: tags
 
   - label: Sizes
     fields:
