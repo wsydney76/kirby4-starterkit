@@ -1,0 +1,37 @@
+label: Sizes
+fields:
+  sizetiny:
+    extends: fields/relatedPages
+    label: Tiny
+    layout: cards
+    size: tiny
+    image:
+      ratio: 3/2
+  sizesmall:
+    extends: fields/relatedPages
+    label: Small
+    layout: cards
+    size: small
+    image:
+      ratio: 3/2
+  sizesmedium:
+    extends: fields/relatedPages
+    label: Medium
+    layout: cards
+    size: medium
+    image:
+      ratio: 3/2
+  sizeslarge:
+    extends: fields/relatedPages
+    label: Large
+    layout: cards
+    size: large
+    image:
+      ratio: 3/2
+  sizeshuge:
+    extends: fields/relatedPages
+    label: Huge
+    layout: cards
+    size: huge
+    image:
+      ratio: 3/2
