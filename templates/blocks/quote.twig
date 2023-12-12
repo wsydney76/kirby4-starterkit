@@ -1,7 +1,7 @@
 <blockquote>
     {{ block.text|raw }}
     {% if block.citation.isNotEmpty %}
-        <cite class="block not-italic mt-2 font-normal">
+        <cite class="mt-2 block font-normal not-italic">
             {{ block.citation|raw }}
         </cite>
     {% endif %}

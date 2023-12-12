@@ -28,7 +28,6 @@ use Kirby\Cms\Blocks;
 use Kirby\Cms\File;
 use Kirby\Cms\Layout;
 use Kirby\Cms\Layouts;
-use Kirby\Cms\Page;
 use Kirby\Cms\Pages;
 use Kirby\Cms\Pagination;
 use Kirby\Cms\Site;
@@ -45,7 +44,7 @@ class FauxTwigExtension extends AbstractExtension implements GlobalsInterface
     public function getGlobals(): array
     {
         return [
-            'page' => new Page(),
+            'page' => new CustomPage(),
             'site' => new Site(),
             'kirby' => new App(),
             'pages' => new Pages(),

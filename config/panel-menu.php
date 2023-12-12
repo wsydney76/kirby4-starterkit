@@ -8,7 +8,7 @@ return [
         'icon' => 'dashboard',
         'link' => 'pages/kitchensinks+kitchen-sink',
         'current' => function() {
-            return str_contains(kirby()->request()->path(), 'kitchensink');
+            return str_ends_with(kirby()->request()->path(), '+kitchen-sink');
         }
     ],
     '-',

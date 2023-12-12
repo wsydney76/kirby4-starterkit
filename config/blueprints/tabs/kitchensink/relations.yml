@@ -21,19 +21,6 @@ columns:
         image:
           ratio: 3/2
 
-      related4:
-        extends: fields/relatedPages
-        label: Related Pages (Table)
-        help:  Setup tbd, imagine a few columns...
-        layout: table
-        columns:
-          subheadline:
-            label: Subheadline
-            type: text
-          date:
-            label: Date
-            value: "{{ page.date.toDate('d.m.Y') }}"
-
   - width: 1/2
     fields:
       imagesheadline:
@@ -56,6 +43,8 @@ columns:
         image:
           ratio: 3/2
 
+  - width: 1/1
+    fields:
       others:
         label: Others
         type: headline

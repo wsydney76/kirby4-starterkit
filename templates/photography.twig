@@ -4,7 +4,7 @@
 {% block content %}
     {% include '@templates/partials/intro.twig' %}
 
-    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
         {% for project in page.children().listed() %}
 
             <li>

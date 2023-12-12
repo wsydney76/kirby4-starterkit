@@ -5,7 +5,7 @@
     {% set contact = page.contact.toObject %}
 
     <dl>
-        <dt class="font-bold my-4">
+        <dt class="my-4 font-bold">
             Photo
         </dt>
         <dd>
@@ -21,32 +21,23 @@
             {% endfor %}
 
 
-        <dt class="font-bold my-4">
+        <dt class="my-4 font-bold">
             Name
         </dt>
         <dd>
             {{ contact.name }}
         </dd>
-        <dt class="font-bold my-4">
+        <dt class="my-4 font-bold">
             Email
         </dt>
         <dd>
             {{ email(contact.email) }}
         </dd>
-        <dt class="font-bold my-4">
+        <dt class="my-4 font-bold">
             Phone
         </dt>
         <dd>
             {{ tel(contact.phone) }}
-        </dd>
-
-        <dt class="font-bold my-4">
-            Body
-        </dt>
-        <dd>
-            {% include '@templates/partials/blocks.twig' with {
-                blocks: contact.body.toBlocks,
-            } only %}
         </dd>
 
     </dl>

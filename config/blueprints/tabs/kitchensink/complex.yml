@@ -15,8 +15,6 @@ columns:
             type: email
           phone:
             type: tel
-          body:
-            type: blocks
 
   - width: 2/3
     fields:

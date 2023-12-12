@@ -16,7 +16,7 @@
     {% for layout in field.toLayouts %}
         {% set class = layout.attrs.class ?? '' %}
 
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-none {{ class }}">
+        <section class="grid max-w-none grid-cols-1 gap-12 lg:grid-cols-12 {{ class }}">
 
             {% for column in layout.columns %}
 

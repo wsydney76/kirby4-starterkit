@@ -8,6 +8,8 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 
+use site\twigextensions\SiteExtension;
+
 $isDev = $_SERVER['ENVIRONMENT'] === 'dev';
 $isProd = $_SERVER['ENVIRONMENT'] === 'production';
 
@@ -20,7 +22,8 @@ return [
         'format' => 'webp'
     ],
     'amteich.twig.env.extensions' => [
-        'site' => 'site\\twigextensions\\SiteExtension'
+        'site' => SiteExtension::class
     ],
     'amteich.twig.cache' => $isProd,
+
 ];

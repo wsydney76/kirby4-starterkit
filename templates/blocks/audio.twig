@@ -6,7 +6,7 @@
 
 
     <div class="not-prose">
-        <div class="sm:flex bg-black text-white mb-8">
+        <div class="mb-8 bg-black text-white sm:flex">
             {% set poster = block.poster.toFile() %}
 
             {% if poster %}
@@ -18,7 +18,7 @@
             {% endif %}
             
             <div class="p-4">
-                <div class="text-2xl mb-1">{{ block.title }}</div>
+                <div class="mb-1 text-2xl">{{ block.title }}</div>
                 <div class="text-2xl text-gray-300">{{ block.subtitle }}</div>
                 <div class="mt-4">
                     {{ block.description|raw }}

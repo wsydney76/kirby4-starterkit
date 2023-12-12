@@ -13,7 +13,7 @@
         {% include '@templates/partials/intro.twig' with {page} only %}
     {% endif %}
 
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {% for note in notes %}
             <li>
                 {% include '@templates/partials/note.twig' with {
