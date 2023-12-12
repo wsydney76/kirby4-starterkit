@@ -1,12 +1,12 @@
 <div class="space-y-4 links">
     <div>
-        {{ page.emailfield }} {{ email(page.emailfield) }}
+        {{ page.emailfield }} {{ page.emailfield|email }}
     </div>
     <div>
-        {{ page.telfield.phone }} {{ tel(page.telfield.phone) }}
+        {{ page.telfield.phone }} {{ page.telfield.phone|tel }}
     </div>
     <div>
-        {{ page.urlfield }} {{ a(page.urlfield, 'A Link') }}
+        {{ page.urlfield }} {{ page.urlfield|a('A Link 2') }}
     </div>
 </div>
 

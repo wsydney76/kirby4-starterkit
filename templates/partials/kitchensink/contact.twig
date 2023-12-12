@@ -31,13 +31,13 @@
             Email
         </dt>
         <dd>
-            {{ email(contact.email) }}
+            {{ contact.email|email }}
         </dd>
         <dt class="my-4 font-bold">
             Phone
         </dt>
         <dd>
-            {{ tel(contact.phone) }}
+            {{ contact.phone|tel }}
         </dd>
 
     </dl>
