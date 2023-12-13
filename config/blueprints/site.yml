@@ -35,6 +35,8 @@ tabs:
               - about
               - home
               - default
-  - label: Kitchen sinks
-    sections:
-      kitchensinks: sections/kitchensinks
+          kitchensinks: sections/kitchensinks
+
+
+
+

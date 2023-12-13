@@ -5,17 +5,24 @@
 type: pages
 label: Kitchen sinks
 parent: kirby.page("kitchensinks")
-info: "{{ page.published }}"
+sortBy: date desc
 template: kitchensink
 empty: No kitchen sinks yet
-layout: cards
-size: medium
-sortBy: date desc
 create:
   - kitchensink
 templates:
   - kitchensink
+layout: table
+info: "{{ page.published }}"
+columns:
+  textfield:
+    label: Textfield
+    type: text
+  int:
+    label: Numberfield
+    type: number
+    align: right
 image:
   query: page.cover
   cover: true
-  ratio: 3/2
+
