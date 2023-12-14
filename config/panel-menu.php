@@ -21,6 +21,14 @@ return [
         }
     ],
     '-',
+    'search' => [
+        'label' => 'Search Page',
+        'icon' => 'search',
+        'link' => 'search',
+        'current' => function() {
+            return kirby()->request()->path() == 'panel/search';
+        }
+    ],
     'users',
     'languages',
     'system',
