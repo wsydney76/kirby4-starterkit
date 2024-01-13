@@ -114,6 +114,16 @@
         </div>
 
         <div>
+            {{ _self.heading('Plugins') }}
+        </div>
+
+        <div class="prose prose-lg mt-12">
+            {% include '@templates/partials/table.twig' with {
+                table: page.table.toTable
+            } only %}
+        </div>
+
+        <div>
             {{ _self.heading('Layout Field') }}
         </div>
 

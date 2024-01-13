@@ -45,3 +45,11 @@ fieldsets:
           text:
             type: text
       - audio
+      table:
+        name: Table
+        icon: table
+        preview: fields
+        wysiwyg: true
+        fields:
+          table:
+            type: table

@@ -1,0 +1,9 @@
+label: plugins
+fields:
+  gap5:
+    type: gap
+    width: 1/6
+  table:
+    label: Table
+    type: table
+    width: 2/3

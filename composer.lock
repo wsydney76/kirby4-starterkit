@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abde245cc664e763e35abebdc0336d34",
+    "content-hash": "736f9aef34e59f61e2252905bb0a5cfe",
     "packages": [
+        {
+            "name": "bogdancondorachi/kirby-table-field",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bogdancondorachi/kirby-table-field.git",
+                "reference": "c42da0aab09648cbfa1cc3bb7eee871cc754130a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bogdancondorachi/kirby-table-field/zipball/c42da0aab09648cbfa1cc3bb7eee871cc754130a",
+                "reference": "c42da0aab09648cbfa1cc3bb7eee871cc754130a",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2"
+            },
+            "require-dev": {
+                "getkirby/cms": "^4.0"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bogdan Condorachi",
+                    "email": "bogdan.condorachi@gmail.com"
+                }
+            ],
+            "description": "Table field plugin for Kirby CMS",
+            "support": {
+                "issues": "https://github.com/bogdancondorachi/kirby-table-field/issues",
+                "source": "https://github.com/bogdancondorachi/kirby-table-field/tree/v2.2.0"
+            },
+            "time": "2024-01-08T17:09:25+00:00"
+        },
         {
             "name": "christian-riesen/base32",
             "version": "1.6.0",

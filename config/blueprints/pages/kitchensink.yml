@@ -39,6 +39,8 @@ tabs:
 
   custom: tabs/kitchensink/custom
 
+  plugins: tabs/kitchensink/plugins
+
   layout: tabs/kitchensink/layout
 
   nested: tabs/kitchensink/nested
