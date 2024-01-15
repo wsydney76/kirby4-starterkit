@@ -9,7 +9,7 @@
   ],
   "require": {
     "getkirby/cms": "^4.0.0",
-    "wearejust/kirby-twig": "^4.1",
+    "wearejust/kirby-twig": "^5.0.1",
     "vlucas/phpdotenv": "^5.5",
     "bogdancondorachi/kirby-table-field": "^2.2"
   },

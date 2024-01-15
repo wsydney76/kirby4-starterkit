@@ -20,9 +20,9 @@ return [
     'thumbs' => [
         'format' => 'webp'
     ],
-    'amteich.twig.env.extensions' => [
+    'wearejust.twig.env.extensions' => [
         'site' => SiteExtension::class
     ],
-    'amteich.twig.cache' => $isProd,
+    'wearejust.twig.cache' => $isProd,
 
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "736f9aef34e59f61e2252905bb0a5cfe",
+    "content-hash": "88bb8dea9e381dc1c530940874360bf0",
     "packages": [
         {
             "name": "bogdancondorachi/kirby-table-field",
@@ -1622,16 +1622,16 @@
         },
         {
             "name": "wearejust/kirby-twig",
-            "version": "4.2.3",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wearejust/kirby-twig.git",
-                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82"
+                "reference": "4ccd6939b1c68a86776a7ed39ade9fb079d9e405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wearejust/kirby-twig/zipball/2df5634037c26a031ffa7c50ed8f296b72762b82",
-                "reference": "2df5634037c26a031ffa7c50ed8f296b72762b82",
+                "url": "https://api.github.com/repos/wearejust/kirby-twig/zipball/4ccd6939b1c68a86776a7ed39ade9fb079d9e405",
+                "reference": "4ccd6939b1c68a86776a7ed39ade9fb079d9e405",
                 "shasum": ""
             },
             "require": {
@@ -1641,7 +1641,7 @@
             "type": "kirby-plugin",
             "autoload": {
                 "psr-4": {
-                    "amteich\\Twig\\": "src/classes/"
+                    "Wearejust\\Kirby\\Twig\\": "src/classes/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1650,19 +1650,24 @@
             ],
             "authors": [
                 {
-                    "name": "Christian Zehetner",
-                    "email": "christian@am-teich.com"
+                    "name": "Cees van Egmond",
+                    "email": "cees.vanegmond@wearejust.com"
                 },
                 {
-                    "name": "Florens Verschelde",
-                    "email": "florens@fvsch.com"
+                    "name": "Sietse Veenman",
+                    "email": "sietse.veenman@wearejust.com"
+                },
+                {
+                    "name": "Duncan Pronk",
+                    "email": "duncan.pronk@wearejust.com"
                 }
             ],
             "description": "Twig templating support for Kirby CMS",
             "support": {
-                "source": "https://github.com/wearejust/kirby-twig/tree/4.2.3"
+                "issues": "https://github.com/wearejust/kirby-twig/issues",
+                "source": "https://github.com/wearejust/kirby-twig/tree/5.0.1"
             },
-            "time": "2022-12-19T16:16:18+00:00"
+            "time": "2023-11-28T09:12:16+00:00"
         }
     ],
     "packages-dev": [],
