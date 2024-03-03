@@ -1,6 +1,6 @@
 label: Complex Fields
 columns:
-  - width: 1/3
+  - width: 1/2
     fields:
       contact:
         type: object
@@ -16,7 +16,7 @@ columns:
           phone:
             type: tel
 
-  - width: 2/3
+  - width: 1/2
     fields:
       addresses:
         label: Structure Field
